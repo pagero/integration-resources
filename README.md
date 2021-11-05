@@ -4,7 +4,6 @@ A collection of integration resources meant to assist with integrating with Page
 
 - [x] Country content recommendations
 - [x] Example files
-- [x] Format specification
-- [x] Interconnect specification
+- [x] Format specifications/MIGs
 
 Questions, suggestions, feedback? Contact us via [Pagero Support Center](https://support.pagero.com/hc/en-us).
