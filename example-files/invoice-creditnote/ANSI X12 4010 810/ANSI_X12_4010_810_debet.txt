@@ -7,7 +7,6 @@ REF*IA*11~
 REF*VA*111111111~
 REF*VN*C1000000~
 REF*CR*REFERENCE~
-REF*21*489290862282~
 PER*BD*Buyer contact*TE*Buyer Phone*EM*Buyer mail~
 PER*SR*Seller contact*TE*Seller Phone*EM*Seller mail~
 N1*BY*Buyer Name*UL*5000000000000~
@@ -24,7 +23,6 @@ N3*Seller Address~
 N4*Seller Town*OH*Seller PostCode*US~
 ITD*03*****20211203*30*****1% 10 Net 30~
 DTM*011*20211103~
-FOB*CC*OR*Free Onboard Vessel~
 IT1*000200*2*EA*10.00**IN*6008189*VN*85899*AV*12234~
 TXI*VA*4*20*****20~
 CTP********20.00*~
@@ -35,6 +33,6 @@ TXI*VA*6*20*****30~
 CAD*M****Best Way~
 SAC*C*D240***1000**********Freight~
 CTT*2~
-SE*36*123456789~
+SE*34*123456789~
 GE*1*123456789~
 IEA*1*123456789~
