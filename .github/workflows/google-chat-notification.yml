@@ -1,0 +1,22 @@
+# Action to send a notification to Google Chat on "push".
+
+name: Google Chat notification
+
+on:
+  push:
+    branches: [ main ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send Google Chat Notification
+      run: |
+          curl --location --request POST '${{ secrets.GCWEBHOOK }}' \
+          --header 'Content-Type: application/json' \
+          --data-raw '{
+              "text": "🚀 <${{ github.event.head_commit.url }}|${{ github.event.head_commit.message }}> (deployment triggered by *${{ github.event.head_commit.author.name }}*)."
+          }'
