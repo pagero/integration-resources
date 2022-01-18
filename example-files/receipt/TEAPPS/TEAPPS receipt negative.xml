@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<INVOICE_CENTER>
+    <TRANSPORT_FRAME>
+        <!--TC_CODE alway TF01-->
+        <TF_CODE>TF01</TF_CODE>
+        <!--timestamp YYYYMMDDHHMMSS-->
+        <TIMESTAMP>20170308094217</TIMESTAMP>
+        <!--ID of the document being responded to-->
+        <BATCH_ID>1507021087</BATCH_ID>
+        <CONTENT_RECEIVER>
+            <!--ID of the receiver of this message (VAT,GLN,ORG-NO etc.)-->
+            <RECEIVER_REF>1234567890</RECEIVER_REF>
+            <!--ID of the document being responded to-->
+            <CONTENT_REF>1507021087</CONTENT_REF>
+        </CONTENT_RECEIVER>
+        <!--ID of the sender of this message (VAT,GLN,ORG-NO etc.)-->
+        <SENDER>1234567890</SENDER>
+        <!--2 = actual receipt-->
+        <FB_REQUEST>2</FB_REQUEST>
+        <!--NEG = NOT OK-->
+        <REQUEST_MESSAGE>NEG</REQUEST_MESSAGE>
+        <!--Error message describing the error-->
+        <REQUEST_TEXT>Some error message</REQUEST_TEXT>
+    </TRANSPORT_FRAME>
+</INVOICE_CENTER>
