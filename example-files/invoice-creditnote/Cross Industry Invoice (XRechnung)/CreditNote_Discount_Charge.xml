@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100">
+    <rsm:ExchangedDocumentContext>
+        <ram:GuidelineSpecifiedDocumentContextParameter>
+            <ram:ID>urn:cen.eu:en16931:2017#compliant#urn:xoev-de:kosit:standard:xrechnung_2.1</ram:ID>
+        </ram:GuidelineSpecifiedDocumentContextParameter>
+    </rsm:ExchangedDocumentContext>
+    <rsm:ExchangedDocument>
+        <ram:ID>CRN-Discount-Charge-Test</ram:ID>
+        <ram:TypeCode>381</ram:TypeCode>
+        <ram:IssueDateTime>
+            <udt:DateTimeString format="102">20230306</udt:DateTimeString>
+        </ram:IssueDateTime>
+        <ram:IncludedNote>
+            <ram:Content>This is a free text on document level 1</ram:Content>
+        </ram:IncludedNote>
+        <ram:IncludedNote>
+            <ram:Content>This is a free text on document level 2</ram:Content>
+        </ram:IncludedNote>
+    </rsm:ExchangedDocument>
+    <rsm:SupplyChainTradeTransaction>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>1</ram:LineID>
+                <ram:IncludedNote>
+                    <ram:Content>This is a free text on line level</ram:Content>
+                </ram:IncludedNote>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+                <ram:SellerAssignedID>AR12345</ram:SellerAssignedID>
+                <ram:BuyerAssignedID>BART12345</ram:BuyerAssignedID>
+                <ram:Name>Article Name 1</ram:Name>
+                <ram:ApplicableProductCharacteristic>
+                    <ram:Description>Serial Number</ram:Description>
+                    <ram:Value>SN123456</ram:Value>
+                </ram:ApplicableProductCharacteristic>
+                <ram:DesignatedProductClassification>
+                    <ram:ClassCode listID="HS">98-99</ram:ClassCode>
+                </ram:DesignatedProductClassification>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:BuyerOrderReferencedDocument>
+                    <ram:LineID>1</ram:LineID>
+                </ram:BuyerOrderReferencedDocument>
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount>250</ram:ChargeAmount>
+                </ram:NetPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="EA">1</ram:BilledQuantity>
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>20</ram:RateApplicablePercent>
+                </ram:ApplicableTradeTax>
+                <ram:SpecifiedTradeAllowanceCharge>
+                    <ram:ChargeIndicator>
+                        <udt:Indicator>false</udt:Indicator>
+                    </ram:ChargeIndicator>
+                    <ram:CalculationPercent>10</ram:CalculationPercent>
+                    <ram:ActualAmount>25.00</ram:ActualAmount>
+                    <ram:Reason>Early purchase discount</ram:Reason>
+                </ram:SpecifiedTradeAllowanceCharge>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:LineTotalAmount>225.00</ram:LineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                <ram:AdditionalReferencedDocument>
+                    <ram:IssuerAssignedID>PO12345678</ram:IssuerAssignedID>
+                    <ram:TypeCode>130</ram:TypeCode>
+                    <ram:ReferenceTypeCode>ON</ram:ReferenceTypeCode>
+                </ram:AdditionalReferencedDocument>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:IncludedSupplyChainTradeLineItem>
+            <ram:AssociatedDocumentLineDocument>
+                <ram:LineID>2</ram:LineID>
+            </ram:AssociatedDocumentLineDocument>
+            <ram:SpecifiedTradeProduct>
+                <ram:SellerAssignedID>AR54321</ram:SellerAssignedID>
+                <ram:BuyerAssignedID>BART54321</ram:BuyerAssignedID>
+                <ram:Name>Article Name 2</ram:Name>
+            </ram:SpecifiedTradeProduct>
+            <ram:SpecifiedLineTradeAgreement>
+                <ram:NetPriceProductTradePrice>
+                    <ram:ChargeAmount>350</ram:ChargeAmount>
+                </ram:NetPriceProductTradePrice>
+            </ram:SpecifiedLineTradeAgreement>
+            <ram:SpecifiedLineTradeDelivery>
+                <ram:BilledQuantity unitCode="XBX">3</ram:BilledQuantity>
+            </ram:SpecifiedLineTradeDelivery>
+            <ram:SpecifiedLineTradeSettlement>
+                <ram:ApplicableTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:ApplicableTradeTax>
+                <ram:BillingSpecifiedPeriod>
+                    <ram:StartDateTime>
+                        <udt:DateTimeString format="102">20230302</udt:DateTimeString>
+                    </ram:StartDateTime>
+                    <ram:EndDateTime>
+                        <udt:DateTimeString format="102">20230303</udt:DateTimeString>
+                    </ram:EndDateTime>
+                </ram:BillingSpecifiedPeriod>
+                <ram:SpecifiedTradeAllowanceCharge>
+                    <ram:ChargeIndicator>
+                        <udt:Indicator>true</udt:Indicator>
+                    </ram:ChargeIndicator>
+                    <ram:ActualAmount>50</ram:ActualAmount>
+                    <ram:ReasonCode>ZZZ</ram:ReasonCode>
+                    <ram:Reason>Warehouse fee</ram:Reason>
+                </ram:SpecifiedTradeAllowanceCharge>
+                <ram:SpecifiedTradeSettlementLineMonetarySummation>
+                    <ram:LineTotalAmount>1100.00</ram:LineTotalAmount>
+                </ram:SpecifiedTradeSettlementLineMonetarySummation>
+                <ram:AdditionalReferencedDocument>
+                    <ram:IssuerAssignedID>DN98989898</ram:IssuerAssignedID>
+                    <ram:TypeCode>130</ram:TypeCode>
+                    <ram:ReferenceTypeCode>DQ</ram:ReferenceTypeCode>
+                </ram:AdditionalReferencedDocument>
+            </ram:SpecifiedLineTradeSettlement>
+        </ram:IncludedSupplyChainTradeLineItem>
+        <ram:ApplicableHeaderTradeAgreement>
+            <ram:BuyerReference>Department 3</ram:BuyerReference>
+            <ram:SellerTradeParty>
+                <ram:Name>Pagero Support</ram:Name>
+                <ram:SpecifiedLegalOrganization>
+                    <ram:ID>123456-0000</ram:ID>
+                    <ram:TradingBusinessName>Pagero Support</ram:TradingBusinessName>
+                </ram:SpecifiedLegalOrganization>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>John Doe</ram:PersonName>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>222 121212</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>test1@test.pagero.com</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>222 22</ram:PostcodeCode>
+                    <ram:LineOne>Street test 2</ram:LineOne>
+                    <ram:LineTwo>Support</ram:LineTwo>
+                    <ram:CityName>Test city</ram:CityName>
+                    <ram:CountryID>DE</ram:CountryID>
+                    <ram:CountrySubDivisionName>AA</ram:CountrySubDivisionName>
+                </ram:PostalTradeAddress>
+                <ram:SpecifiedTaxRegistration>
+                    <ram:ID schemeID="VA">DE0000000001</ram:ID>
+                </ram:SpecifiedTaxRegistration>
+            </ram:SellerTradeParty>
+            <ram:BuyerTradeParty>
+                <ram:GlobalID schemeID="0088">8808808000121</ram:GlobalID>
+                <ram:Name>Test company</ram:Name>
+                <ram:SpecifiedLegalOrganization>
+                    <ram:ID>8808808-0000</ram:ID>
+                    <ram:TradingBusinessName>Test company</ram:TradingBusinessName>
+                </ram:SpecifiedLegalOrganization>
+                <ram:DefinedTradeContact>
+                    <ram:PersonName>Jane Doe</ram:PersonName>
+                    <ram:TelephoneUniversalCommunication>
+                        <ram:CompleteNumber>123 121212</ram:CompleteNumber>
+                    </ram:TelephoneUniversalCommunication>
+                    <ram:EmailURIUniversalCommunication>
+                        <ram:URIID>test@test.pagero.com</ram:URIID>
+                    </ram:EmailURIUniversalCommunication>
+                </ram:DefinedTradeContact>
+                <ram:PostalTradeAddress>
+                    <ram:PostcodeCode>111 11</ram:PostcodeCode>
+                    <ram:LineOne>Street test 1</ram:LineOne>
+                    <ram:CityName>Test city</ram:CityName>
+                    <ram:CountryID>DE</ram:CountryID>
+                </ram:PostalTradeAddress>
+            </ram:BuyerTradeParty>
+            <ram:AdditionalReferencedDocument>
+                <ram:IssuerAssignedID>179295553</ram:IssuerAssignedID>
+                <ram:TypeCode>916</ram:TypeCode>
+                <ram:Name>Related document</ram:Name>
+                <ram:AttachmentBinaryObject mimeCode="text/csv" filename="789112023_179295553.csv">VGhpcyxpcyxhIHRlc3QsdmFsdWUs</ram:AttachmentBinaryObject>
+            </ram:AdditionalReferencedDocument>
+        </ram:ApplicableHeaderTradeAgreement>
+        <ram:ApplicableHeaderTradeDelivery/>
+        <ram:ApplicableHeaderTradeSettlement>
+            <ram:InvoiceCurrencyCode>EUR</ram:InvoiceCurrencyCode>
+            <ram:SpecifiedTradeSettlementPaymentMeans>
+                <ram:TypeCode>30</ram:TypeCode>
+                <ram:PayeePartyCreditorFinancialAccount>
+                    <ram:ProprietaryID>12345678</ram:ProprietaryID>
+                </ram:PayeePartyCreditorFinancialAccount>
+                <ram:PayeeSpecifiedCreditorFinancialInstitution>
+                    <ram:BICID>CITTGB2L</ram:BICID>
+                </ram:PayeeSpecifiedCreditorFinancialInstitution>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:SpecifiedTradeSettlementPaymentMeans>
+                <ram:TypeCode>30</ram:TypeCode>
+                <ram:PayeePartyCreditorFinancialAccount>
+                    <ram:IBANID>GB18CITT30004512345678</ram:IBANID>
+                </ram:PayeePartyCreditorFinancialAccount>
+                <ram:PayeeSpecifiedCreditorFinancialInstitution>
+                    <ram:BICID>CITTGB2L</ram:BICID>
+                </ram:PayeeSpecifiedCreditorFinancialInstitution>
+            </ram:SpecifiedTradeSettlementPaymentMeans>
+            <ram:ApplicableTradeTax>
+                <ram:CalculatedAmount>275.88</ram:CalculatedAmount>
+                <ram:TypeCode>VAT</ram:TypeCode>
+                <ram:BasisAmount>1103.50</ram:BasisAmount>
+                <ram:CategoryCode>S</ram:CategoryCode>
+                <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:ApplicableTradeTax>
+                <ram:CalculatedAmount>45.00</ram:CalculatedAmount>
+                <ram:TypeCode>VAT</ram:TypeCode>
+                <ram:BasisAmount>225.00</ram:BasisAmount>
+                <ram:CategoryCode>S</ram:CategoryCode>
+                <ram:RateApplicablePercent>20</ram:RateApplicablePercent>
+            </ram:ApplicableTradeTax>
+            <ram:SpecifiedTradeAllowanceCharge>
+                <ram:ChargeIndicator>
+                    <udt:Indicator>false</udt:Indicator>
+                </ram:ChargeIndicator>
+                <ram:CalculationPercent>2</ram:CalculationPercent>
+                <ram:ActualAmount>26.50</ram:ActualAmount>
+                <ram:Reason>Loyal client discount</ram:Reason>
+                <ram:CategoryTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:CategoryTradeTax>
+            </ram:SpecifiedTradeAllowanceCharge>
+            <ram:SpecifiedTradeAllowanceCharge>
+                <ram:ChargeIndicator>
+                    <udt:Indicator>true</udt:Indicator>
+                </ram:ChargeIndicator>
+                <ram:ActualAmount>30</ram:ActualAmount>
+                <ram:ReasonCode>FC</ram:ReasonCode>
+                <ram:Reason>Freight charge</ram:Reason>
+                <ram:CategoryTradeTax>
+                    <ram:TypeCode>VAT</ram:TypeCode>
+                    <ram:CategoryCode>S</ram:CategoryCode>
+                    <ram:RateApplicablePercent>25</ram:RateApplicablePercent>
+                </ram:CategoryTradeTax>
+            </ram:SpecifiedTradeAllowanceCharge>
+            <ram:SpecifiedTradePaymentTerms>
+                <ram:Description>30 days net. Over due fine: 3</ram:Description>
+                <ram:DueDateDateTime>
+                    <udt:DateTimeString format="102">20230405</udt:DateTimeString>
+                </ram:DueDateDateTime>
+            </ram:SpecifiedTradePaymentTerms>
+            <ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+                <ram:LineTotalAmount>1325.00</ram:LineTotalAmount>
+                <ram:ChargeTotalAmount>30.00</ram:ChargeTotalAmount>
+                <ram:AllowanceTotalAmount>26.50</ram:AllowanceTotalAmount>
+                <ram:TaxBasisTotalAmount>1328.50</ram:TaxBasisTotalAmount>
+                <ram:TaxTotalAmount currencyID="EUR">320.88</ram:TaxTotalAmount>
+                <ram:GrandTotalAmount>1649.38</ram:GrandTotalAmount>
+                <ram:DuePayableAmount>1649.38</ram:DuePayableAmount>
+            </ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+        </ram:ApplicableHeaderTradeSettlement>
+    </rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>

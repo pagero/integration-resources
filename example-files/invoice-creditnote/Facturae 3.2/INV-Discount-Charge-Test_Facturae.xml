@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<namespace:Facturae xmlns:namespace="http://www.facturae.es/Facturae/2009/v3.2/Facturae"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="http://www.facturae.es/Facturae/2009/v3.2/Facturae Facturaev3_2.xsd">
+   <FileHeader>
+      <SchemaVersion>3.2</SchemaVersion>
+      <Modality>I</Modality>
+      <InvoiceIssuerType>TE</InvoiceIssuerType>
+      <ThirdParty>
+         <TaxIdentification>
+            <PersonTypeCode>J</PersonTypeCode>
+            <ResidenceTypeCode>U</ResidenceTypeCode>
+            <TaxIdentificationNumber>SE556581469501</TaxIdentificationNumber>
+         </TaxIdentification>
+         <LegalEntity>
+            <CorporateName>Pagero</CorporateName>
+            <TradeName>Pagero</TradeName>
+            <OverseasAddress>
+               <Address>Box 11006</Address>
+               <PostCodeAndTown>404 21 Goteborg</PostCodeAndTown>
+               <Province>Goteborg</Province>
+               <CountryCode>SWE</CountryCode>
+            </OverseasAddress>
+            <ContactDetails>
+               <Telephone>+46317308800</Telephone>
+               <TeleFax>+46317308801</TeleFax>
+               <WebAddress>http://www.pagero.com</WebAddress>
+               <ElectronicMail>info@pagero.com</ElectronicMail>
+            </ContactDetails>
+         </LegalEntity>
+      </ThirdParty>
+      <Batch>
+         <BatchIdentifier>_INV-Discount-Charge-Test</BatchIdentifier>
+         <InvoicesCount>1</InvoicesCount>
+         <TotalInvoicesAmount>
+            <TotalAmount>1649.38</TotalAmount>
+         </TotalInvoicesAmount>
+         <TotalOutstandingAmount>
+            <TotalAmount>1649.38</TotalAmount>
+         </TotalOutstandingAmount>
+         <TotalExecutableAmount>
+            <TotalAmount>1649.38</TotalAmount>
+         </TotalExecutableAmount>
+         <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+      </Batch>
+   </FileHeader>
+   <Parties>
+      <SellerParty>
+         <TaxIdentification>
+            <PersonTypeCode>J</PersonTypeCode>
+            <ResidenceTypeCode>R</ResidenceTypeCode>
+            <TaxIdentificationNumber>ESB12345600</TaxIdentificationNumber>
+         </TaxIdentification>
+         <AdministrativeCentres>
+            <AdministrativeCentre>
+               <Name>Pagero Support</Name>
+               <AddressInSpain>
+                  <Address>Calle test 2</Address>
+                  <PostCode>22222</PostCode>
+                  <Town>Test de abajo</Town>
+                  <Province>Andalucia</Province>
+                  <CountryCode>ESP</CountryCode>
+               </AddressInSpain>
+               <ContactDetails>
+                  <Telephone>222121212</Telephone>
+                  <WebAddress>www.pagero.com</WebAddress>
+                  <ElectronicMail>test1@test.pagero.com</ElectronicMail>
+               </ContactDetails>
+            </AdministrativeCentre>
+         </AdministrativeCentres>
+         <LegalEntity>
+            <CorporateName>Pagero Support</CorporateName>
+            <TradeName>Pagero Support</TradeName>
+            <RegistrationData>
+               <Book/>
+               <RegisterOfCompaniesLocation/>
+               <Sheet/>
+               <Folio/>
+               <Section/>
+               <Volume/>
+               <AdditionalRegistrationData/>
+            </RegistrationData>
+            <AddressInSpain>
+               <Address>Calle test 2</Address>
+               <PostCode>22222</PostCode>
+               <Town>Test de abajo</Town>
+               <Province>Andalucia</Province>
+               <CountryCode>ESP</CountryCode>
+            </AddressInSpain>
+            <ContactDetails>
+               <Telephone>222121212</Telephone>
+               <ElectronicMail>test1@test.pagero.com</ElectronicMail>
+               <ContactPersons>Juan Doe</ContactPersons>
+            </ContactDetails>
+         </LegalEntity>
+      </SellerParty>
+      <BuyerParty>
+         <TaxIdentification>
+            <PersonTypeCode>J</PersonTypeCode>
+            <ResidenceTypeCode>R</ResidenceTypeCode>
+            <TaxIdentificationNumber>ESA88088080</TaxIdentificationNumber>
+         </TaxIdentification>
+         <LegalEntity>
+            <CorporateName>Test S.A.</CorporateName>
+            <TradeName>Test S.A.</TradeName>
+            <AddressInSpain>
+               <Address>Calle test 1</Address>
+               <PostCode>41008</PostCode>
+               <Town>Test de arriba</Town>
+               <Province>Andalucia</Province>
+               <CountryCode>ESP</CountryCode>
+            </AddressInSpain>
+            <ContactDetails>
+               <Telephone>123121212</Telephone>
+               <ElectronicMail>test@test.pagero.com</ElectronicMail>
+               <ContactPersons>Jane Doe</ContactPersons>
+            </ContactDetails>
+         </LegalEntity>
+      </BuyerParty>
+   </Parties>
+   <Invoices>
+      <Invoice>
+         <InvoiceHeader>
+            <InvoiceNumber>INV-Allowance-Test</InvoiceNumber>
+            <InvoiceDocumentType>FC</InvoiceDocumentType>
+            <InvoiceClass>OO</InvoiceClass>
+         </InvoiceHeader>
+         <InvoiceIssueData>
+            <IssueDate>2023-03-06</IssueDate>
+            <PlaceOfIssue>
+               <PostCode>22222</PostCode>
+               <PlaceOfIssueDescription>Test de abajo</PlaceOfIssueDescription>
+            </PlaceOfIssue>
+            <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+            <TaxCurrencyCode>EUR</TaxCurrencyCode>
+            <LanguageName>es</LanguageName>
+         </InvoiceIssueData>
+         <TaxesOutputs>
+            <Tax>
+               <TaxTypeCode>01</TaxTypeCode>
+               <TaxRate>25.00</TaxRate>
+               <TaxableBase>
+                  <TotalAmount>1103.50</TotalAmount>
+               </TaxableBase>
+               <TaxAmount>
+                  <TotalAmount>275.88</TotalAmount>
+               </TaxAmount>
+            </Tax>
+            <Tax>
+               <TaxTypeCode>01</TaxTypeCode>
+               <TaxRate>20.00</TaxRate>
+               <TaxableBase>
+                  <TotalAmount>225.00</TotalAmount>
+               </TaxableBase>
+               <TaxAmount>
+                  <TotalAmount>45.00</TotalAmount>
+               </TaxAmount>
+            </Tax>
+         </TaxesOutputs>
+         <InvoiceTotals>
+            <TotalGrossAmount>1325.00</TotalGrossAmount>
+            <GeneralDiscounts>
+               <Discount>
+                  <DiscountReason>Loyal client discount</DiscountReason>
+                  <DiscountRate>2.0000</DiscountRate>
+                  <DiscountAmount>26.500000</DiscountAmount>
+               </Discount>
+            </GeneralDiscounts>
+            <GeneralSurcharges>
+               <Charge>
+                  <ChargeReason>Freight charge</ChargeReason>
+                  <ChargeAmount>30.000000</ChargeAmount>
+               </Charge>
+            </GeneralSurcharges>
+            <TotalGeneralDiscounts>26.50</TotalGeneralDiscounts>
+            <TotalGeneralSurcharges>30.00</TotalGeneralSurcharges>
+            <TotalGrossAmountBeforeTaxes>1328.50</TotalGrossAmountBeforeTaxes>
+            <TotalTaxOutputs>320.88</TotalTaxOutputs>
+            <TotalTaxesWithheld>0.00</TotalTaxesWithheld>
+            <InvoiceTotal>1649.38</InvoiceTotal>
+            <TotalOutstandingAmount>1649.38</TotalOutstandingAmount>
+            <TotalExecutableAmount>1649.38</TotalExecutableAmount>
+         </InvoiceTotals>
+         <Items>
+            <InvoiceLine>
+               <IssuerTransactionReference>SO12345678</IssuerTransactionReference>
+               <IssuerTransactionDate>2023-02-01</IssuerTransactionDate>
+               <ReceiverTransactionReference>PO12345678</ReceiverTransactionReference>
+               <ReceiverTransactionDate>2023-01-31</ReceiverTransactionDate>
+               <SequenceNumber>1</SequenceNumber>
+               <ItemDescription>Article Name 1</ItemDescription>
+               <Quantity>1</Quantity>
+               <UnitOfMeasure>05</UnitOfMeasure>
+               <UnitPriceWithoutTax>250.000000</UnitPriceWithoutTax>
+               <TotalCost>250.000000</TotalCost>
+               <DiscountsAndRebates>
+                  <Discount>
+                     <DiscountReason>Early purchase discount</DiscountReason>
+                     <DiscountRate>10.0000</DiscountRate>
+                     <DiscountAmount>25.000000</DiscountAmount>
+                  </Discount>
+               </DiscountsAndRebates>
+               <GrossAmount>225.000000</GrossAmount>
+               <TaxesOutputs>
+                  <Tax>
+                     <TaxTypeCode>01</TaxTypeCode>
+                     <TaxRate>20.00</TaxRate>
+                     <TaxableBase>
+                        <TotalAmount>225.00</TotalAmount>
+                     </TaxableBase>
+                     <TaxAmount>
+                        <TotalAmount>45.00</TotalAmount>
+                     </TaxAmount>
+                  </Tax>
+               </TaxesOutputs>
+               <AdditionalLineItemInformation>This is a free text on line level</AdditionalLineItemInformation>
+               <ArticleCode>AR12345</ArticleCode>
+            </InvoiceLine>
+            <InvoiceLine>
+               <SequenceNumber>2</SequenceNumber>
+               <DeliveryNotesReferences>
+                  <DeliveryNote>
+                     <DeliveryNoteNumber>DN98989898</DeliveryNoteNumber>
+                     <DeliveryNoteDate>2023-03-02</DeliveryNoteDate>
+                  </DeliveryNote>
+               </DeliveryNotesReferences>
+               <ItemDescription>Article Name 2</ItemDescription>
+               <Quantity>3</Quantity>
+               <UnitOfMeasure>06</UnitOfMeasure>
+               <UnitPriceWithoutTax>350.000000</UnitPriceWithoutTax>
+               <TotalCost>1050.000000</TotalCost>
+               <Charges>
+                  <Charge>
+                     <ChargeReason>Warehouse fee</ChargeReason>
+                     <ChargeAmount>50.000000</ChargeAmount>
+                  </Charge>
+               </Charges>
+               <GrossAmount>1100.000000</GrossAmount>
+               <TaxesOutputs>
+                  <Tax>
+                     <TaxTypeCode>01</TaxTypeCode>
+                     <TaxRate>25.00</TaxRate>
+                     <TaxableBase>
+                        <TotalAmount>1100.00</TotalAmount>
+                     </TaxableBase>
+                     <TaxAmount>
+                        <TotalAmount>275.00</TotalAmount>
+                     </TaxAmount>
+                  </Tax>
+               </TaxesOutputs>
+               <LineItemPeriod>
+                  <StartDate>2023-03-02</StartDate>
+                  <EndDate>2023-03-03</EndDate>
+               </LineItemPeriod>
+               <TransactionDate>2023-03-02</TransactionDate>
+               <ArticleCode>AR54321</ArticleCode>
+            </InvoiceLine>
+         </Items>
+         <PaymentDetails>
+            <Installment>
+               <InstallmentDueDate>2023-04-05</InstallmentDueDate>
+               <InstallmentAmount>1649.38</InstallmentAmount>
+               <PaymentMeans>04</PaymentMeans>
+               <AccountToBeCredited>
+                  <IBAN>GB18CITT30004512345678</IBAN>
+                  <BIC>CITTGB2LXXX</BIC>
+               </AccountToBeCredited>
+               <DebitReconciliationReference/>
+            </Installment>
+         </PaymentDetails>
+         <LegalLiterals>
+            <LegalReference>30 days net</LegalReference>
+         </LegalLiterals>
+         <AdditionalData>
+            <RelatedDocuments>
+               <Attachment>
+                  <AttachmentFormat>pdf</AttachmentFormat>
+                  <AttachmentEncoding>BASE64</AttachmentEncoding>
+                  <AttachmentDescription>789112023_179295553.pdf</AttachmentDescription>
+                  <AttachmentData>VGhpcyxpcyxhIHRlc3QsdmFsdWUs</AttachmentData>
+               </Attachment>
+            </RelatedDocuments>
+            <InvoiceAdditionalInformation>This is a free text on document level 1This is a free text on document level 2</InvoiceAdditionalInformation>
+         </AdditionalData>
+      </Invoice>
+   </Invoices>
+</namespace:Facturae>

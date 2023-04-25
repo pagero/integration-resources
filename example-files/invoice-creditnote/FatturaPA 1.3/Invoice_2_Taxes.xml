@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>SE</IdPaese>
+                <IdCodice>5565814695</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>789112023</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>1234567</CodiceDestinatario>
+            <ContattiTrasmittente>
+                <Telefono>222121212</Telefono>
+                <Email>test1@test.pagero.com</Email>
+            </ContattiTrasmittente>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>0000000001</IdCodice>
+                </IdFiscaleIVA>
+                <CodiceFiscale>12345670000</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>Pagero Support</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Street test 2</Indirizzo>
+                <CAP>22222</CAP>
+                <Comune>Test city</Comune>
+                <Provincia>AA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+            <IscrizioneREA>
+                <Ufficio>AB</Ufficio>
+                <NumeroREA>12345</NumeroREA>
+                <CapitaleSociale>10000.00</CapitaleSociale>
+                <SocioUnico>SU</SocioUnico>
+                <StatoLiquidazione>LN</StatoLiquidazione>
+            </IscrizioneREA>
+            <Contatti>
+                <Telefono>222121212</Telefono>
+                <Email>test1@test.pagero.com</Email>
+            </Contatti>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <CodiceFiscale>88088080000</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>Test company</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Street test 1</Indirizzo>
+                <CAP>11111</CAP>
+                <Comune>Test city</Comune>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD01</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2023-03-06</Data>
+                <Numero>INV-2-Taxes-Test</Numero>
+                <DatiBollo>
+                    <BolloVirtuale>SI</BolloVirtuale>
+                    <ImportoBollo>2.00</ImportoBollo>
+                </DatiBollo>
+                <ImportoTotaleDocumento>1470.00</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+            <DatiOrdineAcquisto>
+                <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+                <IdDocumento>PO12345678</IdDocumento>
+                <Data>2023-01-31</Data>
+                <NumItem>1</NumItem>
+                <CodiceCUP>PN123456</CodiceCUP>
+            </DatiOrdineAcquisto>
+            <DatiOrdineAcquisto>
+                <RiferimentoNumeroLinea>2</RiferimentoNumeroLinea>
+                <IdDocumento>PO12345678</IdDocumento>
+                <Data>2023-01-31</Data>
+                <NumItem>2</NumItem>
+                <CodiceCUP>PN123456</CodiceCUP>
+            </DatiOrdineAcquisto>
+            <DatiDDT>
+                <NumeroDDT>DN98989898</NumeroDDT>
+                <DataDDT>2023-03-02</DataDDT>
+                <RiferimentoNumeroLinea>2</RiferimentoNumeroLinea>
+            </DatiDDT>
+            <DatiTrasporto/>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Fornitore</CodiceTipo>
+                    <CodiceValore>AR12345</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Cliente</CodiceTipo>
+                    <CodiceValore>BART12345</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>Serial Number</CodiceTipo>
+                    <CodiceValore>SN123456</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>Article Name 1</Descrizione>
+                <Quantita>3.00</Quantita>
+                <UnitaMisura>EA</UnitaMisura>
+                <PrezzoUnitario>200.00</PrezzoUnitario>
+                <PrezzoTotale>600.00</PrezzoTotale>
+                <AliquotaIVA>20.00</AliquotaIVA>
+                <AltriDatiGestionali>
+                    <TipoDato>Line text</TipoDato>
+                    <RiferimentoTesto>This is a free text on line level</RiferimentoTesto>
+                </AltriDatiGestionali>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>2</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Fornitore</CodiceTipo>
+                    <CodiceValore>AR54321</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Cliente</CodiceTipo>
+                    <CodiceValore>BART54321</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>Article Name 2</Descrizione>
+                <Quantita>5.00</Quantita>
+                <UnitaMisura>BX</UnitaMisura>
+                <DataInizioPeriodo>2023-03-02</DataInizioPeriodo>
+                <DataFinePeriodo>2023-03-03</DataFinePeriodo>
+                <PrezzoUnitario>150.00</PrezzoUnitario>
+                <PrezzoTotale>750.00</PrezzoTotale>
+                <AliquotaIVA>0.00</AliquotaIVA>
+                <Natura>N4</Natura>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>20.00</AliquotaIVA>
+                <ImponibileImporto>600.00</ImponibileImporto>
+                <Imposta>120.00</Imposta>
+            </DatiRiepilogo>
+            <DatiRiepilogo>
+                <AliquotaIVA>0.00</AliquotaIVA>
+                <Natura>N4</Natura>
+                <ImponibileImporto>750.00</ImponibileImporto>
+                <Imposta>0.00</Imposta>
+                <RiferimentoNormativo>Exempted from tax</RiferimentoNormativo>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP05</ModalitaPagamento>
+                <GiorniTerminiPagamento>30</GiorniTerminiPagamento>
+                <DataScadenzaPagamento>2023-04-05</DataScadenzaPagamento>
+                <ImportoPagamento>1470.00</ImportoPagamento>
+                <IBAN>GB18CITT30004512345678</IBAN>
+                <BIC>CITTGB2L</BIC>
+            </DettaglioPagamento>
+        </DatiPagamento>
+        <Allegati>
+            <NomeAttachment>789112023_179295553.csv</NomeAttachment>
+            <FormatoAttachment>CSV</FormatoAttachment>
+            <DescrizioneAttachment>Related document</DescrizioneAttachment>
+            <Attachment>VGhpcyxpcyxhIHRlc3QsdmFsdWUs</Attachment>
+        </Allegati>
+    </FatturaElettronicaBody>
+</p:FatturaElettronica>

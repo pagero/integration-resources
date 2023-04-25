@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<p:FatturaElettronica xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:p="http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" versione="FPR12">
+    <FatturaElettronicaHeader>
+        <DatiTrasmissione>
+            <IdTrasmittente>
+                <IdPaese>SE</IdPaese>
+                <IdCodice>5565814695</IdCodice>
+            </IdTrasmittente>
+            <ProgressivoInvio>789112026</ProgressivoInvio>
+            <FormatoTrasmissione>FPR12</FormatoTrasmissione>
+            <CodiceDestinatario>1234567</CodiceDestinatario>
+            <ContattiTrasmittente>
+                <Telefono>222121212</Telefono>
+                <Email>test1@test.pagero.com</Email>
+            </ContattiTrasmittente>
+        </DatiTrasmissione>
+        <CedentePrestatore>
+            <DatiAnagrafici>
+                <IdFiscaleIVA>
+                    <IdPaese>IT</IdPaese>
+                    <IdCodice>0000000001</IdCodice>
+                </IdFiscaleIVA>
+                <CodiceFiscale>12345670000</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>Pagero Support</Denominazione>
+                </Anagrafica>
+                <RegimeFiscale>RF01</RegimeFiscale>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Street test 2</Indirizzo>
+                <CAP>22222</CAP>
+                <Comune>Test city</Comune>
+                <Provincia>AA</Provincia>
+                <Nazione>IT</Nazione>
+            </Sede>
+            <IscrizioneREA>
+                <Ufficio>AB</Ufficio>
+                <NumeroREA>12345</NumeroREA>
+                <CapitaleSociale>10000.00</CapitaleSociale>
+                <SocioUnico>SU</SocioUnico>
+                <StatoLiquidazione>LN</StatoLiquidazione>
+            </IscrizioneREA>
+            <Contatti>
+                <Telefono>222121212</Telefono>
+                <Email>test1@test.pagero.com</Email>
+            </Contatti>
+        </CedentePrestatore>
+        <CessionarioCommittente>
+            <DatiAnagrafici>
+                <CodiceFiscale>88088080000</CodiceFiscale>
+                <Anagrafica>
+                    <Denominazione>Test company</Denominazione>
+                </Anagrafica>
+            </DatiAnagrafici>
+            <Sede>
+                <Indirizzo>Street test 1</Indirizzo>
+                <CAP>11111</CAP>
+                <Comune>Test city</Comune>
+                <Nazione>IT</Nazione>
+            </Sede>
+        </CessionarioCommittente>
+    </FatturaElettronicaHeader>
+    <FatturaElettronicaBody>
+        <DatiGenerali>
+            <DatiGeneraliDocumento>
+                <TipoDocumento>TD04</TipoDocumento>
+                <Divisa>EUR</Divisa>
+                <Data>2023-03-06</Data>
+                <Numero>CRN-1-Discount-1-Cha</Numero>
+                <DatiBollo>
+                    <BolloVirtuale>SI</BolloVirtuale>
+                    <ImportoBollo>2.00</ImportoBollo>
+                </DatiBollo>
+                <ImportoTotaleDocumento>1649.38</ImportoTotaleDocumento>
+            </DatiGeneraliDocumento>
+            <DatiOrdineAcquisto>
+                <RiferimentoNumeroLinea>1</RiferimentoNumeroLinea>
+                <IdDocumento>PO12345678</IdDocumento>
+                <Data>2023-01-31</Data>
+                <NumItem>1</NumItem>
+                <CodiceCUP>PN123456</CodiceCUP>
+            </DatiOrdineAcquisto>
+            <DatiDDT>
+                <NumeroDDT>DN98989898</NumeroDDT>
+                <DataDDT>2023-03-02</DataDDT>
+                <RiferimentoNumeroLinea>2</RiferimentoNumeroLinea>
+            </DatiDDT>
+            <DatiTrasporto/>
+        </DatiGenerali>
+        <DatiBeniServizi>
+            <DettaglioLinee>
+                <NumeroLinea>1</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Fornitore</CodiceTipo>
+                    <CodiceValore>AR12345</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Cliente</CodiceTipo>
+                    <CodiceValore>BART12345</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>Serial Number</CodiceTipo>
+                    <CodiceValore>SN123456</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>Article Name 1</Descrizione>
+                <Quantita>1.00</Quantita>
+                <UnitaMisura>EA</UnitaMisura>
+                <PrezzoUnitario>250.00</PrezzoUnitario>
+                <ScontoMaggiorazione>
+                    <Tipo>SC</Tipo>
+                    <Percentuale>10.00</Percentuale>
+                </ScontoMaggiorazione>
+                <PrezzoTotale>225.00</PrezzoTotale>
+                <AliquotaIVA>20.00</AliquotaIVA>
+                <AltriDatiGestionali>
+                    <TipoDato>Line text</TipoDato>
+                    <RiferimentoTesto>This is a free text on line level</RiferimentoTesto>
+                </AltriDatiGestionali>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>2</NumeroLinea>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Fornitore</CodiceTipo>
+                    <CodiceValore>AR54321</CodiceValore>
+                </CodiceArticolo>
+                <CodiceArticolo>
+                    <CodiceTipo>Codice Art. Cliente</CodiceTipo>
+                    <CodiceValore>BART54321</CodiceValore>
+                </CodiceArticolo>
+                <Descrizione>Article Name 2</Descrizione>
+                <Quantita>3.00</Quantita>
+                <UnitaMisura>BX</UnitaMisura>
+                <DataInizioPeriodo>2023-03-02</DataInizioPeriodo>
+                <DataFinePeriodo>2023-03-03</DataFinePeriodo>
+                <PrezzoUnitario>350.00</PrezzoUnitario>
+                <ScontoMaggiorazione>
+                    <Tipo>MG</Tipo>
+                    <Importo>16.66666667</Importo>
+                </ScontoMaggiorazione>
+                <PrezzoTotale>1100.00</PrezzoTotale>
+                <AliquotaIVA>25.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>3</NumeroLinea>
+                <TipoCessionePrestazione>AC</TipoCessionePrestazione>
+                <Descrizione>Freight charge</Descrizione>
+                <PrezzoUnitario>30.00</PrezzoUnitario>
+                <PrezzoTotale>30.00</PrezzoTotale>
+                <AliquotaIVA>25.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DettaglioLinee>
+                <NumeroLinea>4</NumeroLinea>
+                <TipoCessionePrestazione>SC</TipoCessionePrestazione>
+                <Descrizione>Loyal client discount</Descrizione>
+                <PrezzoUnitario>-26.50</PrezzoUnitario>
+                <PrezzoTotale>-26.50</PrezzoTotale>
+                <AliquotaIVA>25.00</AliquotaIVA>
+            </DettaglioLinee>
+            <DatiRiepilogo>
+                <AliquotaIVA>25.00</AliquotaIVA>
+                <ImponibileImporto>1103.50</ImponibileImporto>
+                <Imposta>275.88</Imposta>
+            </DatiRiepilogo>
+            <DatiRiepilogo>
+                <AliquotaIVA>20.00</AliquotaIVA>
+                <ImponibileImporto>225.00</ImponibileImporto>
+                <Imposta>45.00</Imposta>
+            </DatiRiepilogo>
+        </DatiBeniServizi>
+        <DatiPagamento>
+            <CondizioniPagamento>TP02</CondizioniPagamento>
+            <DettaglioPagamento>
+                <ModalitaPagamento>MP05</ModalitaPagamento>
+                <GiorniTerminiPagamento>30</GiorniTerminiPagamento>
+                <DataScadenzaPagamento>2023-04-05</DataScadenzaPagamento>
+                <ImportoPagamento>1649.38</ImportoPagamento>
+                <IBAN>GB18CITT30004512345678</IBAN>
+                <BIC>CITTGB2L</BIC>
+            </DettaglioPagamento>
+        </DatiPagamento>
+        <Allegati>
+            <NomeAttachment>789112023_179295553.csv</NomeAttachment>
+            <FormatoAttachment>CSV</FormatoAttachment>
+            <DescrizioneAttachment>Related document</DescrizioneAttachment>
+            <Attachment>VGhpcyxpcyxhIHRlc3QsdmFsdWUs</Attachment>
+        </Allegati>
+    </FatturaElettronicaBody>
+</p:FatturaElettronica>

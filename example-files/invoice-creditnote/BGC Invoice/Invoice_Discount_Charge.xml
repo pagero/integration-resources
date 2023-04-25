@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<batch status="C" version="1.2.7" id="">
+   <batchDetails>
+      <totalSections>1</totalSections>
+      <totalDocuments>1</totalDocuments>
+   </batchDetails>
+   <section id="" bgnrType="originator">
+      <sectionDetails>
+         <totalDocuments>1</totalDocuments>
+      </sectionDetails>
+      <document id="INV-Discount-Charge-Test" type="INV01" distribution="">
+         <documentDetails>
+            <addresseeID type="ORG">8808808-0000</addresseeID>
+         </documentDetails>
+         <invoice type="INV01" id="INV-Discount-Charge-Test">
+            <invoiceDetails>
+               <identifier type="">:EDI</identifier>
+               <invoiceNumber>INV-Discount-Charge-Test</invoiceNumber>
+               <invoiceDate>2023-03-06</invoiceDate>
+               <orderReference buyerID="PO12345678" id="SO12345678"/>
+               <customerReferenceNumber>Department 3</customerReferenceNumber>
+               <invoiceTotal>
+                  <netAmount currency="EUR">1328.50</netAmount>
+                  <vatAmount base="1328.50" currency="EUR">320.88</vatAmount>
+                  <totalAmount currency="EUR">1649.38</totalAmount>
+                  <totalAmountInclVatAmountNoTaxDeduction currency="EUR">1649.38</totalAmountInclVatAmountNoTaxDeduction>
+                  <sumRowAmount currency="EUR">1325.00</sumRowAmount>
+               </invoiceTotal>
+               <vatAmount rate="25" currency="EUR" base="1103.50">275.88</vatAmount>
+               <vatAmount rate="20" currency="EUR" base="225.00">45.00</vatAmount>
+               <text>This is a free text on document level 1</text>
+               <text>This is a free text on document level 2</text>
+               <expenses>
+                  <text>Freight charge</text>
+                  <netAmount currency="EUR">30.00</netAmount>
+               </expenses>
+               <discountDetails>
+                  <discount percent="2">
+                     <text>Loyal client discount</text>
+                     <netAmount currency="EUR">-26.50</netAmount>
+                  </discount>
+               </discountDetails>
+            </invoiceDetails>
+            <invoiceRow id="1">
+               <article id="AR12345" buyerID="BART12345">
+                  <name>Article Name 1</name>
+               </article>
+               <text>This is a free text on line level</text>
+               <text>Serial Number: SN123456</text>
+               <rowOrderReference id="SO12345678" rowID="1" buyerID="PO12345678">
+                  <date>2023-02-01</date>
+                  <buyerDate>2023-01-31</buyerDate>
+               </rowOrderReference>
+               <quantity unitCode="EA">1.00</quantity>
+               <unitPrice currency="EUR" unit="EA">250</unitPrice>
+               <discount percent="10">
+                  <text>Early purchase discount</text>
+                  <netAmount currency="EUR">25.00</netAmount>
+               </discount>
+               <netAmount currency="EUR">225.00</netAmount>
+               <vatAmount rate="20" currency="EUR">45.00</vatAmount>
+               <totalAmount currency="EUR">270.00</totalAmount>
+            </invoiceRow>
+            <invoiceRow id="2">
+               <article id="AR54321" buyerID="BART54321">
+                  <name>Article Name 2</name>
+               </article>
+               <rowDeliveryReference>
+                  <date>2023-03-02</date>
+               </rowDeliveryReference>
+               <period>
+                  <startDate>2023-03-02</startDate>
+                  <endDate>2023-03-03</endDate>
+               </period>
+               <quantity unitCode="BX">3.00</quantity>
+               <unitPrice currency="EUR" unit="BX">350</unitPrice>
+               <netAmount currency="EUR">1100.00</netAmount>
+               <vatAmount rate="25" currency="EUR">275.00</vatAmount>
+               <totalAmount currency="EUR">1375.00</totalAmount>
+               <expenses>
+                  <text>Warehouse fee</text>
+                  <netAmount currency="EUR">50.00</netAmount>
+               </expenses>
+               <deliveryNoteNumber>DN98989898</deliveryNoteNumber>
+            </invoiceRow>
+            <seller id="DE0000000001" buyerID="123456-0000">
+               <name>Pagero Support</name>
+               <vatDetails>
+                  <vatNumber>DE0000000001</vatNumber>
+               </vatDetails>
+               <postalAddress>
+                  <name>Pagero Support</name>
+                  <reference>Support</reference>
+                  <street>Street test 2</street>
+                  <town postCode="222 22">Test city</town>
+                  <country code="DE"/>
+               </postalAddress>
+               <salesContact>
+                  <name>John Doe</name>
+                  <phone>222 121212</phone>
+                  <email>test1@test.pagero.com</email>
+               </salesContact>
+               <mainContact>
+                  <phone>222 121212</phone>
+                  <email>test1@test.pagero.com</email>
+                  <URL>www.pagero.com</URL>
+               </mainContact>
+               <accounts>
+                  <account type="BE" bic="CITTGB2L" primary="true">12345678</account>
+                  <account type="IBAN" bic="CITTGB2L" primary="false">GB18CITT30004512345678</account>
+               </accounts>
+            </seller>
+            <buyer id="8808808-0000">
+               <name>Test company</name>
+               <postalAddress>
+                  <name>Test company</name>
+                  <street>Street test 1</street>
+                  <town postCode="111 11">Test city</town>
+                  <country code="DE"/>
+               </postalAddress>
+               <contact>
+                  <name>Jane Doe</name>
+                  <phone>123 121212</phone>
+                  <email>test@test.pagero.com</email>
+               </contact>
+               <gs1>8808808000121</gs1>
+            </buyer>
+            <payment status="unpaid">
+               <dueDate>2023-04-05</dueDate>
+               <terms>30 days net</terms>
+               <method code="EG"/>
+               <overDueFine rate="3"/>
+               <netAmount currency="EUR">1328.50</netAmount>
+               <vatAmount currency="EUR">320.88</vatAmount>
+               <totalAmount currency="EUR">1649.38</totalAmount>
+            </payment>
+            <epiDetails>
+               <identificationDetails date="2023-03-06"/>
+               <beneficiary>
+                  <account type="BE" swift="CITTGB2L">12345678</account>
+               </beneficiary>
+               <paymentInstructions>
+                  <remittanceID/>
+                  <instructedAmount currency="EUR">1649.38</instructedAmount>
+                  <optionDate>2023-04-05</optionDate>
+               </paymentInstructions>
+            </epiDetails>
+            <enclosures>
+               <enclosureDetails mimeCode="text/csv">
+                  <name>789112023_179295553.csv</name>
+                  <encodedObject filename="789112023_179295553.csv"
+                                 format="BASE64"
+                                 objectID="179295553">
+                     <data>VGhpcyxpcyxhIHRlc3QsdmFsdWUs</data>
+                  </encodedObject>
+               </enclosureDetails>
+            </enclosures>
+         </invoice>
+      </document>
+   </section>
+</batch>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns010:ver2.0:extended:urn:www.peppol.eu:bis:peppol5a:ver2.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii05:ver2.0</cbc:ProfileID>
+    <cbc:ID>INV-OTC-Test</cbc:ID>
+    <cbc:IssueDate>2023-03-06</cbc:IssueDate>
+    <cbc:InvoiceTypeCode listID="UNCL1001">380</cbc:InvoiceTypeCode>
+    <cbc:Note>This is a free text on document level 1 
+        This is a free text on document level 2</cbc:Note>
+    <cbc:DocumentCurrencyCode listID="ISO4217">EUR</cbc:DocumentCurrencyCode>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>179295553</cbc:ID>
+        <cbc:DocumentType>Related Invoice</cbc:DocumentType>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="789112023_179295553.csv">VGhpcyxpcyxhIHRlc3QsdmFsdWUs</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID>123456-0000</cbc:EndpointID>
+            <cac:PartyName>
+                <cbc:Name>Pagero Support</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:AdditionalStreetName>Support</cbc:AdditionalStreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>222 22</cbc:PostalZone>
+                <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1:Alpha2">DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID schemeID="DE:VAT">DE0000000001</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Pagero Support</cbc:RegistrationName>
+                <cbc:CompanyID>123456-0000</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>John Doe</cbc:ID>
+                <cbc:Name>John Doe</cbc:Name>
+                <cbc:Telephone>222 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+        <cac:AccountingContact>
+            <cbc:Telephone>222 121212</cbc:Telephone>
+            <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+        </cac:AccountingContact>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="ZZZ">CUS12345</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="GLN">8808808000121</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test company</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street test 1</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>111 11</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1:Alpha2">DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Test company</cbc:RegistrationName>
+                <cbc:CompanyID>8808808-0000</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>Department 3</cbc:ID>
+                <cbc:Name>Jane Doe</cbc:Name>
+                <cbc:Telephone>123 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode listID="UNCL4461">31</cbc:PaymentMeansCode>
+        <cbc:PaymentDueDate>2023-04-05</cbc:PaymentDueDate>
+        <cbc:PaymentChannelCode>BBAN</cbc:PaymentChannelCode>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID schemeID="LOCAL">12345678</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cbc:ID>XXX</cbc:ID>
+                <cac:FinancialInstitution>
+                    <cbc:ID schemeID="BIC">CITTGB2L</cbc:ID>
+                </cac:FinancialInstitution>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode listID="UNCL4461">31</cbc:PaymentMeansCode>
+        <cbc:PaymentDueDate>2023-04-05</cbc:PaymentDueDate>
+        <cbc:PaymentChannelCode>IBAN</cbc:PaymentChannelCode>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID schemeID="IBAN">GB18CITT30004512345678</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cac:FinancialInstitution>
+                    <cbc:ID schemeID="BIC">CITTGB2L</cbc:ID>
+                </cac:FinancialInstitution>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+        <cbc:Note>30 days net</cbc:Note>
+    </cac:PaymentTerms>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="EUR">400.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="EUR">400.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="EUR">400.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="EUR">400.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="BX" unitCodeListID="UNECERec20">4</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="EUR">400.00</cbc:LineExtensionAmount>
+        <cac:InvoicePeriod>
+            <cbc:StartDate>2023-03-02</cbc:StartDate>
+            <cbc:EndDate>2023-03-03</cbc:EndDate>
+        </cac:InvoicePeriod>
+        <cac:OrderLineReference>
+            <cbc:LineID>2</cbc:LineID>
+            <cac:OrderReference>
+                <cbc:ID>PO12345678</cbc:ID>
+                <cbc:SalesOrderID>SO12345678</cbc:SalesOrderID>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:Delivery>
+            <cbc:ActualDeliveryDate>2023-03-02</cbc:ActualDeliveryDate>
+        </cac:Delivery>
+        <cac:Item>
+            <cbc:Name>Article Name 2</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>BART54321</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>AR54321</cbc:ID>
+            </cac:SellersItemIdentification>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="EUR">100</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

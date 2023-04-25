@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IFSFinvoice Version="2.0">
+    <SellerPartyDetails>
+        <SellerPartyIdentifier>1234560000</SellerPartyIdentifier>
+        <SellerOrganisationName>Pagero Support</SellerOrganisationName>
+        <SellerOrganisationTaxCode>DE0000000001</SellerOrganisationTaxCode>
+        <SellerPostalAddressDetails>
+            <SellerStreetName>Street test 2</SellerStreetName>
+            <SellerTownName>Test city</SellerTownName>
+            <SellerPostCodeIdentifier>222 22</SellerPostCodeIdentifier>
+            <CountryCode>DE</CountryCode>
+        </SellerPostalAddressDetails>
+    </SellerPartyDetails>
+    <SellerOrganisationUnitNumber>1234560000</SellerOrganisationUnitNumber>
+    <SellerContactPersonName>John Doe</SellerContactPersonName>
+    <SellerCommunicationDetails>
+        <SellerPhoneNumberIdentifier>222 121212</SellerPhoneNumberIdentifier>
+        <SellerEmailaddressIdentifier>test1@test.pagero.com</SellerEmailaddressIdentifier>
+    </SellerCommunicationDetails>
+    <SellerInformationDetails>
+        <SellerPhoneNumber>222 121212</SellerPhoneNumber>
+        <SellerCommonEmailaddressIdentifier>test1@test.pagero.com</SellerCommonEmailaddressIdentifier>
+        <SellerWebaddressIdentifier>www.pagero.com</SellerWebaddressIdentifier>
+        <SellerAccountDetails>
+            <SellerAccountID IdentificationSchemeName="IBAN">GB18CITT30004512345678</SellerAccountID>
+            <SellerBic IdentificationSchemeName="BIC">CITTGB2L</SellerBic>
+        </SellerAccountDetails>
+        <SellerAccountDetails>
+            <SellerAccountID IdentificationSchemeName="BBAN">12345678</SellerAccountID>
+            <SellerBic IdentificationSchemeName="BIC">CITTGB2L</SellerBic>
+        </SellerAccountDetails>
+    </SellerInformationDetails>
+    <InvoiceRecipientPartyDetails>
+        <InvoiceRecipientPartyIdentifier>88088080000</InvoiceRecipientPartyIdentifier>
+        <InvoiceRecipientOrganisationName>Test company</InvoiceRecipientOrganisationName>
+        <InvoiceRecipientPostalAddressDetails>
+            <InvoiceRecipientStreetName>Street test 1</InvoiceRecipientStreetName>
+            <InvoiceRecipientTownName>Test city</InvoiceRecipientTownName>
+            <InvoiceRecipientPostCodeIdentifier>111 11</InvoiceRecipientPostCodeIdentifier>
+            <CountryCode>DE</CountryCode>
+        </InvoiceRecipientPostalAddressDetails>
+    </InvoiceRecipientPartyDetails>
+    <InvoiceRecipientOrganisationUnitNumber>88088080000</InvoiceRecipientOrganisationUnitNumber>
+    <InvoiceRecipientContactPersonName>Jane Doe</InvoiceRecipientContactPersonName>
+    <InvoiceRecipientCommunicationDetails>
+        <InvoiceRecipientPhoneNumberIdentifier>123 121212</InvoiceRecipientPhoneNumberIdentifier>
+        <InvoiceRecipientEmailaddressIdentifier>test@test.pagero.com</InvoiceRecipientEmailaddressIdentifier>
+    </InvoiceRecipientCommunicationDetails>
+    <BuyerPartyDetails>
+        <BuyerPartyIdentifier>88088080000</BuyerPartyIdentifier>
+        <BuyerOrganisationName>Test company</BuyerOrganisationName>
+        <BuyerPostalAddressDetails>
+            <BuyerStreetName>Street test 1</BuyerStreetName>
+            <BuyerTownName>Test city</BuyerTownName>
+            <BuyerPostCodeIdentifier>111 11</BuyerPostCodeIdentifier>
+            <CountryCode>DE</CountryCode>
+        </BuyerPostalAddressDetails>
+    </BuyerPartyDetails>
+    <BuyerOrganisationUnitNumber>88088080000</BuyerOrganisationUnitNumber>
+    <BuyerContactPersonName>Jane Doe</BuyerContactPersonName>
+    <BuyerCommunicationDetails>
+        <BuyerPhoneNumberIdentifier>123 121212</BuyerPhoneNumberIdentifier>
+        <BuyerEmailaddressIdentifier>test@test.pagero.com</BuyerEmailaddressIdentifier>
+    </BuyerCommunicationDetails>
+    <DeliveryCommunicationDetails/>
+    <DeliveryDetails/>
+    <InvoiceDetails>
+        <InvoiceTypeCode CodeListAgencyIdentifier="SPY">INV01</InvoiceTypeCode>
+        <InvoiceTypeText>INVOICE</InvoiceTypeText>
+        <OriginCode>Original</OriginCode>
+        <InvoiceNumber>INV-Dis-Char-Test</InvoiceNumber>
+        <InvoiceDate Format="CCYYMMDD">20230306</InvoiceDate>
+        <InvoiceTotalVatExcludedAmount AmountCurrencyIdentifier="EUR">1328,50</InvoiceTotalVatExcludedAmount>
+        <InvoiceTotalVatAmount AmountCurrencyIdentifier="EUR">320,88</InvoiceTotalVatAmount>
+        <InvoiceTotalVatIncludedAmount AmountCurrencyIdentifier="EUR">1649,38</InvoiceTotalVatIncludedAmount>
+        <VatSpecificationDetails>
+            <VatBaseAmount AmountCurrencyIdentifier="EUR">1103,50</VatBaseAmount>
+            <VatRatePercent>25,00</VatRatePercent>
+            <VatRateAmount AmountCurrencyIdentifier="EUR">275,88</VatRateAmount>
+        </VatSpecificationDetails>
+        <VatSpecificationDetails>
+            <VatBaseAmount AmountCurrencyIdentifier="EUR">225,00</VatBaseAmount>
+            <VatRatePercent>20,00</VatRatePercent>
+            <VatRateAmount AmountCurrencyIdentifier="EUR">45,00</VatRateAmount>
+        </VatSpecificationDetails>
+        <InvoiceFreeText>This is a free text on document level 1 This is a free text on document level 2</InvoiceFreeText>
+        <PaymentTermsDetails>
+            <PaymentTermsFreeText>30 days net</PaymentTermsFreeText>
+            <InvoiceDueDate Format="CCYYMMDD">20230405</InvoiceDueDate>
+            <PaymentOverDueFineDetails>
+                <PaymentOverDueFinePercent>3,00</PaymentOverDueFinePercent>
+            </PaymentOverDueFineDetails>
+        </PaymentTermsDetails>
+        <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+    </InvoiceDetails>
+    <InvoiceRow>
+        <RowSubIdentifier>1</RowSubIdentifier>
+        <ArticleIdentifier>AR12345</ArticleIdentifier>
+        <ArticleName>Article Name 1</ArticleName>
+        <BuyerArticleIdentifier>BART12345</BuyerArticleIdentifier>
+        <DeliveredQuantity QuantityUnitCode="EA">1,00</DeliveredQuantity>
+        <UnitPriceAmount AmountCurrencyIdentifier="EUR" UnitPriceUnitCode="EA">250,00000</UnitPriceAmount>
+        <RowIdentifier>PO12345678</RowIdentifier>
+        <RowIdentifierDate Format="CCYYMMDD">20230131</RowIdentifierDate>
+        <RowDeliveryIdentifier>SO12345678</RowDeliveryIdentifier>
+        <RowFreeText>This is a free text on line level</RowFreeText>
+        <RowDiscountPercent>10,00</RowDiscountPercent>
+        <RowDiscountAmount>25,00</RowDiscountAmount>
+        <RowProgressiveDiscountDetails>
+            <RowDiscountPercent>10,00</RowDiscountPercent>
+            <RowDiscountAmount AmountCurrencyIdentifier="EUR">25,00</RowDiscountAmount>
+            <RowDiscountTypeText>Early purchase discount</RowDiscountTypeText>
+        </RowProgressiveDiscountDetails>
+        <RowVatRatePercent>20,00</RowVatRatePercent>
+        <RowVatAmount AmountCurrencyIdentifier="EUR">45,00</RowVatAmount>
+        <RowVatExcludedAmount AmountCurrencyIdentifier="EUR">225,00</RowVatExcludedAmount>
+        <RowAmount AmountCurrencyIdentifier="EUR">270,00</RowAmount>
+    </InvoiceRow>
+    <InvoiceRow>
+        <RowSubIdentifier>2</RowSubIdentifier>
+        <ArticleIdentifier>AR54321</ArticleIdentifier>
+        <ArticleName>Article Name 2</ArticleName>
+        <BuyerArticleIdentifier>BART54321</BuyerArticleIdentifier>
+        <DeliveredQuantity QuantityUnitCode="BX">3,00</DeliveredQuantity>
+        <StartDate Format="CCYYMMDD">20230302</StartDate>
+        <EndDate Format="CCYYMMDD">20230303</EndDate>
+        <UnitPriceAmount AmountCurrencyIdentifier="EUR" UnitPriceUnitCode="BX">350,00000</UnitPriceAmount>
+        <RowDeliveryDate Format="CCYYMMDD">20230302</RowDeliveryDate>
+        <RowDeliveryDetails>
+            <RowDeliveryNoteIdentifier>DN98989898</RowDeliveryNoteIdentifier>
+        </RowDeliveryDetails>
+        <RowFreeText>Note number: DN98989898</RowFreeText>
+        <RowDiscountAmount>-50,00</RowDiscountAmount>
+        <RowProgressiveDiscountDetails>
+            <RowDiscountAmount AmountCurrencyIdentifier="EUR">-50,00</RowDiscountAmount>
+            <RowDiscountTypeCode>ZZZ</RowDiscountTypeCode>
+            <RowDiscountTypeText>Warehouse fee</RowDiscountTypeText>
+        </RowProgressiveDiscountDetails>
+        <RowVatRatePercent>25,00</RowVatRatePercent>
+        <RowVatAmount AmountCurrencyIdentifier="EUR">275,00</RowVatAmount>
+        <RowVatExcludedAmount AmountCurrencyIdentifier="EUR">1100,00</RowVatExcludedAmount>
+        <RowAmount AmountCurrencyIdentifier="EUR">1375,00</RowAmount>
+    </InvoiceRow>
+    <InvoiceRow>
+        <RowSubIdentifier>3</RowSubIdentifier>
+        <ArticleName>Freight charge</ArticleName>
+        <RowVatRatePercent>25,00</RowVatRatePercent>
+        <RowVatExcludedAmount AmountCurrencyIdentifier="EUR">30,00</RowVatExcludedAmount>
+    </InvoiceRow>
+    <InvoiceRow>
+        <RowSubIdentifier>4</RowSubIdentifier>
+        <ArticleName>Loyal client discount Rate: 2</ArticleName>
+        <RowVatRatePercent>25,00</RowVatRatePercent>
+        <RowVatExcludedAmount AmountCurrencyIdentifier="EUR">-26,50</RowVatExcludedAmount>
+    </InvoiceRow>
+    <EpiDetails>
+        <EpiIdentificationDetails>
+            <EpiDate Format="CCYYMMDD">20230306</EpiDate>
+            <EpiEmail>test1@test.pagero.com</EpiEmail>
+        </EpiIdentificationDetails>
+        <EpiPartyDetails>
+            <EpiBfiPartyDetails>
+                <EpiBfiIdentifier IdentificationSchemeName="BIC">CITTGB2L</EpiBfiIdentifier>
+            </EpiBfiPartyDetails>
+            <EpiBeneficiaryPartyDetails>
+                <EpiAccountID IdentificationSchemeName="BBAN">12345678</EpiAccountID>
+            </EpiBeneficiaryPartyDetails>
+        </EpiPartyDetails>
+        <EpiPaymentInstructionDetails>
+            <EpiInstructedAmount AmountCurrencyIdentifier="EUR">1649,38</EpiInstructedAmount>
+            <EpiCharge ChargeOption="SHA"/>
+            <EpiDateOptionDate Format="CCYYMMDD">20230405</EpiDateOptionDate>
+        </EpiPaymentInstructionDetails>
+    </EpiDetails>
+</IFSFinvoice>

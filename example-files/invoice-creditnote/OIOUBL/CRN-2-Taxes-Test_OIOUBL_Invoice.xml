@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreditNote xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2"
+            xmlns:ccts="urn:un:unece:uncefact:documentation:2"
+            xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2"
+            xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2"
+            xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2"
+            xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+   <cbc:CustomizationID>OIOUBL-2.01</cbc:CustomizationID>
+   <cbc:ProfileID schemeAgencyID="320" schemeID="urn:oioubl:id:profileid-1.2">urn:www.nesubl.eu:profiles:profile5:ver2.0</cbc:ProfileID>
+   <cbc:ID>CRN-2-Taxes-Test</cbc:ID>
+   <cbc:CopyIndicator>false</cbc:CopyIndicator>
+   <cbc:IssueDate>2023-03-06</cbc:IssueDate>
+   <cbc:Note>This is a free text on document level 1 This is a free text on document level 2</cbc:Note>
+   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+   <cbc:LineCountNumeric>2</cbc:LineCountNumeric>
+   <cac:OrderReference>
+      <cbc:ID>PO12345678</cbc:ID>
+      <cbc:SalesOrderID>SO12345678</cbc:SalesOrderID>
+      <cbc:IssueDate>2023-01-31</cbc:IssueDate>
+   </cac:OrderReference>
+   <cac:AccountingSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="EU:VAT">12345678</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="ZZZ">12345678</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Pagero Support</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+            <cbc:StreetName>Street test 2</cbc:StreetName>
+            <cbc:Department>Support</cbc:Department>
+            <cbc:CityName>Test city</cbc:CityName>
+            <cbc:PostalZone>2222</cbc:PostalZone>
+            <cac:Country>
+               <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyTaxScheme>
+            <cbc:CompanyID schemeID="DK:SE">DK12345678</cbc:CompanyID>
+            <cac:TaxScheme>
+               <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+               <cbc:Name>Moms</cbc:Name>
+            </cac:TaxScheme>
+         </cac:PartyTaxScheme>
+         <cac:PartyLegalEntity>
+            <cbc:CompanyID schemeID="DK:CVR">DK12345678</cbc:CompanyID>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:ID>N/A</cbc:ID>
+            <cbc:Name>John Doe</cbc:Name>
+            <cbc:Telephone>222 121212</cbc:Telephone>
+            <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+      <cac:AccountingContact>
+         <cbc:Telephone>222 121212</cbc:Telephone>
+         <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+      </cac:AccountingContact>
+   </cac:AccountingSupplierParty>
+   <cac:AccountingCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="GLN">8808808000121</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="GLN">8808808000121</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Test company</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+            <cbc:StreetName>Street test 1</cbc:StreetName>
+            <cbc:CityName>Test city</cbc:CityName>
+            <cbc:PostalZone>1111</cbc:PostalZone>
+            <cac:Country>
+               <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyLegalEntity>
+            <cbc:CompanyID schemeID="ZZZ">88088080</cbc:CompanyID>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:ID>Department 3</cbc:ID>
+            <cbc:Name>Jane Doe</cbc:Name>
+            <cbc:Telephone>123 121212</cbc:Telephone>
+            <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+      <cac:AccountingContact>
+         <cbc:Telephone>123 121212</cbc:Telephone>
+         <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+      </cac:AccountingContact>
+   </cac:AccountingCustomerParty>
+   <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="EUR">120.00</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+         <cbc:TaxableAmount currencyID="EUR">600.00</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="EUR">120.00</cbc:TaxAmount>
+         <cac:TaxCategory>
+            <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxcategoryid-1.1">StandardRated</cbc:ID>
+            <cbc:Percent>20</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+               <cbc:Name>Moms</cbc:Name>
+            </cac:TaxScheme>
+         </cac:TaxCategory>
+      </cac:TaxSubtotal>
+      <cac:TaxSubtotal>
+         <cbc:TaxableAmount currencyID="EUR">750.00</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+         <cac:TaxCategory>
+            <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxcategoryid-1.1">ZeroRated</cbc:ID>
+            <cbc:Percent>0</cbc:Percent>
+            <cbc:TaxExemptionReason>Exempted from tax</cbc:TaxExemptionReason>
+            <cac:TaxScheme>
+               <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+               <cbc:Name>Moms</cbc:Name>
+            </cac:TaxScheme>
+         </cac:TaxCategory>
+      </cac:TaxSubtotal>
+   </cac:TaxTotal>
+   <cac:LegalMonetaryTotal>
+      <cbc:LineExtensionAmount currencyID="EUR">1350.00</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="EUR">120.00</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="EUR">1470.00</cbc:TaxInclusiveAmount>
+      <cbc:PayableAmount currencyID="EUR">1470.00</cbc:PayableAmount>
+   </cac:LegalMonetaryTotal>
+   <cac:CreditNoteLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:Note>This is a free text on line level</cbc:Note>
+      <cbc:CreditedQuantity unitCode="EA">3.00</cbc:CreditedQuantity>
+      <cbc:LineExtensionAmount currencyID="EUR">600.00</cbc:LineExtensionAmount>
+      <cac:DocumentReference>
+         <cbc:ID>SO12345678</cbc:ID>
+         <cbc:IssueDate>2023-02-01</cbc:IssueDate>
+         <cbc:DocumentTypeCode listID="UN/ECE 1001" listAgencyID="6">130</cbc:DocumentTypeCode>
+      </cac:DocumentReference>
+      <cac:TaxTotal>
+         <cbc:TaxAmount currencyID="EUR">120.00</cbc:TaxAmount>
+         <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">600.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">120.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+               <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxcategoryid-1.1">StandardRated</cbc:ID>
+               <cbc:Percent>20</cbc:Percent>
+               <cac:TaxScheme>
+                  <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                  <cbc:Name>Moms</cbc:Name>
+               </cac:TaxScheme>
+            </cac:TaxCategory>
+         </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:Item>
+         <cbc:Name>Article Name 1</cbc:Name>
+         <cac:BuyersItemIdentification>
+            <cbc:ID schemeAgencyID="9" schemeID="GTIN">BART12345</cbc:ID>
+         </cac:BuyersItemIdentification>
+         <cac:SellersItemIdentification>
+            <cbc:ID>AR12345</cbc:ID>
+         </cac:SellersItemIdentification>
+         <cac:AdditionalItemProperty>
+            <cbc:Name>Serial Number</cbc:Name>
+            <cbc:Value>SN123456</cbc:Value>
+         </cac:AdditionalItemProperty>
+      </cac:Item>
+      <cac:Price>
+         <cbc:PriceAmount currencyID="EUR">200</cbc:PriceAmount>
+         <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+      </cac:Price>
+   </cac:CreditNoteLine>
+   <cac:CreditNoteLine>
+      <cbc:ID>2</cbc:ID>
+      <cbc:CreditedQuantity unitCode="BX">5.00</cbc:CreditedQuantity>
+      <cbc:LineExtensionAmount currencyID="EUR">750.00</cbc:LineExtensionAmount>
+      <cac:DocumentReference>
+         <cbc:ID>SO12345678</cbc:ID>
+         <cbc:IssueDate>2023-02-01</cbc:IssueDate>
+         <cbc:DocumentTypeCode listID="UN/ECE 1001" listAgencyID="6">130</cbc:DocumentTypeCode>
+      </cac:DocumentReference>
+      <cac:Delivery>
+         <cbc:ActualDeliveryDate>2023-03-02</cbc:ActualDeliveryDate>
+         <cac:RequestedDeliveryPeriod>
+            <cbc:StartDate>2023-03-02</cbc:StartDate>
+            <cbc:EndDate>2023-03-03</cbc:EndDate>
+         </cac:RequestedDeliveryPeriod>
+      </cac:Delivery>
+      <cac:TaxTotal>
+         <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+         <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="EUR">750.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+               <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxcategoryid-1.1">ZeroRated</cbc:ID>
+               <cbc:Percent>0</cbc:Percent>
+               <cac:TaxScheme>
+                  <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                  <cbc:Name>Moms</cbc:Name>
+               </cac:TaxScheme>
+            </cac:TaxCategory>
+         </cac:TaxSubtotal>
+      </cac:TaxTotal>
+      <cac:Item>
+         <cbc:Name>Article Name 2</cbc:Name>
+         <cac:BuyersItemIdentification>
+            <cbc:ID schemeAgencyID="9" schemeID="GTIN">BART54321</cbc:ID>
+         </cac:BuyersItemIdentification>
+         <cac:SellersItemIdentification>
+            <cbc:ID>AR54321</cbc:ID>
+         </cac:SellersItemIdentification>
+      </cac:Item>
+      <cac:Price>
+         <cbc:PriceAmount currencyID="EUR">150</cbc:PriceAmount>
+         <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+      </cac:Price>
+   </cac:CreditNoteLine>
+</CreditNote>

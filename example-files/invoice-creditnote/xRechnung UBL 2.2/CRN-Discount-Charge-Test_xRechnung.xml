@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreditNote xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2"
+            xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+            xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+   <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:xoev-de:kosit:standard:xrechnung_2.2</cbc:CustomizationID>
+   <cbc:ID>CRE-Discount-Charge-Test</cbc:ID>
+   <cbc:IssueDate>2023-03-06</cbc:IssueDate>
+   <cbc:CreditNoteTypeCode>381</cbc:CreditNoteTypeCode>
+   <cbc:Note>This is a free text on document level 1 This is a free text on document level 2</cbc:Note>
+   <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+   <cbc:BuyerReference>Department 3</cbc:BuyerReference>
+   <cac:AdditionalDocumentReference>
+      <cbc:ID>179295553</cbc:ID>
+      <cbc:DocumentDescription>Related document</cbc:DocumentDescription>
+      <cac:Attachment>
+         <cbc:EmbeddedDocumentBinaryObject filename="789112023_179295553.csv" mimeCode="text/csv">VGhpcyxpcyxhIHRlc3QsdmFsdWUs</cbc:EmbeddedDocumentBinaryObject>
+      </cac:Attachment>
+   </cac:AdditionalDocumentReference>
+   <cac:AccountingSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0204">01-234-56789</cbc:EndpointID>
+         <cac:PartyName>
+            <cbc:Name>Pagero Support</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Street test 2</cbc:StreetName>
+            <cbc:CityName>Test city</cbc:CityName>
+            <cbc:PostalZone>222 22</cbc:PostalZone>
+            <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+            <cac:Country>
+               <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyTaxScheme>
+            <cbc:CompanyID>DE000000001</cbc:CompanyID>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:PartyTaxScheme>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Pagero Support</cbc:RegistrationName>
+            <cbc:CompanyID>0123456789012</cbc:CompanyID>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name>John Doe</cbc:Name>
+            <cbc:Telephone>222 121212</cbc:Telephone>
+            <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:AccountingSupplierParty>
+   <cac:AccountingCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="0204">98-765-43210</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="0088">8808808000121</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Test company</cbc:Name>
+         </cac:PartyName>
+         <cac:PostalAddress>
+            <cbc:StreetName>Street test 1</cbc:StreetName>
+            <cbc:CityName>Test city</cbc:CityName>
+            <cbc:PostalZone>111 11</cbc:PostalZone>
+            <cac:Country>
+               <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+            </cac:Country>
+         </cac:PostalAddress>
+         <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Test company</cbc:RegistrationName>
+            <cbc:CompanyID>0987654321012</cbc:CompanyID>
+         </cac:PartyLegalEntity>
+         <cac:Contact>
+            <cbc:Name>Jane Doe</cbc:Name>
+            <cbc:Telephone>123 121212</cbc:Telephone>
+            <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+         </cac:Contact>
+      </cac:Party>
+   </cac:AccountingCustomerParty>
+   <cac:PaymentMeans>
+      <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+      <cac:PayeeFinancialAccount>
+         <cbc:ID>12345678</cbc:ID>
+         <cac:FinancialInstitutionBranch>
+            <cbc:ID>CITTGB2L</cbc:ID>
+         </cac:FinancialInstitutionBranch>
+      </cac:PayeeFinancialAccount>
+   </cac:PaymentMeans>
+   <cac:PaymentMeans>
+      <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+      <cac:PayeeFinancialAccount>
+         <cbc:ID>GB18CITT30004512345678</cbc:ID>
+         <cac:FinancialInstitutionBranch>
+            <cbc:ID>CITTGB2L</cbc:ID>
+         </cac:FinancialInstitutionBranch>
+      </cac:PayeeFinancialAccount>
+   </cac:PaymentMeans>
+   <cac:PaymentTerms>
+      <cbc:Note>30 days net</cbc:Note>
+   </cac:PaymentTerms>
+   <cac:AllowanceCharge>
+      <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+      <cbc:AllowanceChargeReasonCode>FC</cbc:AllowanceChargeReasonCode>
+      <cbc:AllowanceChargeReason>Freight charge</cbc:AllowanceChargeReason>
+      <cbc:Amount currencyID="EUR">30.00</cbc:Amount>
+      <cac:TaxCategory>
+         <cbc:ID>S</cbc:ID>
+         <cbc:Percent>25</cbc:Percent>
+         <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+         </cac:TaxScheme>
+      </cac:TaxCategory>
+   </cac:AllowanceCharge>
+   <cac:AllowanceCharge>
+      <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+      <cbc:AllowanceChargeReason>Loyal client discount</cbc:AllowanceChargeReason>
+      <cbc:Amount currencyID="EUR">26.50</cbc:Amount>
+      <cac:TaxCategory>
+         <cbc:ID>S</cbc:ID>
+         <cbc:Percent>25</cbc:Percent>
+         <cac:TaxScheme>
+            <cbc:ID>VAT</cbc:ID>
+         </cac:TaxScheme>
+      </cac:TaxCategory>
+   </cac:AllowanceCharge>
+   <cac:TaxTotal>
+      <cbc:TaxAmount currencyID="EUR">320.88</cbc:TaxAmount>
+      <cac:TaxSubtotal>
+         <cbc:TaxableAmount currencyID="EUR">1103.50</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="EUR">275.88</cbc:TaxAmount>
+         <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:TaxCategory>
+      </cac:TaxSubtotal>
+      <cac:TaxSubtotal>
+         <cbc:TaxableAmount currencyID="EUR">225.00</cbc:TaxableAmount>
+         <cbc:TaxAmount currencyID="EUR">45.00</cbc:TaxAmount>
+         <cac:TaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>20</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:TaxCategory>
+      </cac:TaxSubtotal>
+   </cac:TaxTotal>
+   <cac:LegalMonetaryTotal>
+      <cbc:LineExtensionAmount currencyID="EUR">1325.00</cbc:LineExtensionAmount>
+      <cbc:TaxExclusiveAmount currencyID="EUR">1328.50</cbc:TaxExclusiveAmount>
+      <cbc:TaxInclusiveAmount currencyID="EUR">1649.38</cbc:TaxInclusiveAmount>
+      <cbc:AllowanceTotalAmount currencyID="EUR">26.50</cbc:AllowanceTotalAmount>
+      <cbc:ChargeTotalAmount currencyID="EUR">30.00</cbc:ChargeTotalAmount>
+      <cbc:PayableAmount currencyID="EUR">1649.38</cbc:PayableAmount>
+   </cac:LegalMonetaryTotal>
+   <cac:CreditNoteLine>
+      <cbc:ID>1</cbc:ID>
+      <cbc:Note>This is a free text on line level</cbc:Note>
+      <cbc:CreditedQuantity unitCode="EA">1</cbc:CreditedQuantity>
+      <cbc:LineExtensionAmount currencyID="EUR">225.00</cbc:LineExtensionAmount>
+      <cac:OrderLineReference>
+         <cbc:LineID>1</cbc:LineID>
+      </cac:OrderLineReference>
+      <cac:DocumentReference>
+         <cbc:ID schemeID="ON">PO12345678</cbc:ID>
+         <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+      </cac:DocumentReference>
+      <cac:AllowanceCharge>
+         <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+         <cbc:AllowanceChargeReason>Early purchase discount</cbc:AllowanceChargeReason>
+         <cbc:Amount currencyID="EUR">25.00</cbc:Amount>
+      </cac:AllowanceCharge>
+      <cac:Item>
+         <cbc:Name>Article Name 1</cbc:Name>
+         <cac:BuyersItemIdentification>
+            <cbc:ID>BART12345</cbc:ID>
+         </cac:BuyersItemIdentification>
+         <cac:SellersItemIdentification>
+            <cbc:ID>AR12345</cbc:ID>
+         </cac:SellersItemIdentification>
+         <cac:CommodityClassification>
+            <cbc:ItemClassificationCode listID="HS">98-99</cbc:ItemClassificationCode>
+         </cac:CommodityClassification>
+         <cac:CommodityClassification>
+            <cbc:ItemClassificationCode listID="SN">SN123456</cbc:ItemClassificationCode>
+         </cac:CommodityClassification>
+         <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>20</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+         <cbc:PriceAmount currencyID="EUR">250</cbc:PriceAmount>
+      </cac:Price>
+   </cac:CreditNoteLine>
+   <cac:CreditNoteLine>
+      <cbc:ID>2</cbc:ID>
+      <cbc:CreditedQuantity unitCode="XBX">3</cbc:CreditedQuantity>
+      <cbc:LineExtensionAmount currencyID="EUR">1100.00</cbc:LineExtensionAmount>
+      <cac:InvoicePeriod>
+         <cbc:StartDate>2023-03-02</cbc:StartDate>
+         <cbc:EndDate>2023-03-03</cbc:EndDate>
+      </cac:InvoicePeriod>
+      <cac:DocumentReference>
+         <cbc:ID schemeID="DQ">DN98989898</cbc:ID>
+         <cbc:DocumentTypeCode>130</cbc:DocumentTypeCode>
+      </cac:DocumentReference>
+      <cac:AllowanceCharge>
+         <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+         <cbc:AllowanceChargeReasonCode>ZZZ</cbc:AllowanceChargeReasonCode>
+         <cbc:AllowanceChargeReason>Warehouse fee</cbc:AllowanceChargeReason>
+         <cbc:Amount currencyID="EUR">50.00</cbc:Amount>
+      </cac:AllowanceCharge>
+      <cac:Item>
+         <cbc:Name>Article Name 2</cbc:Name>
+         <cac:BuyersItemIdentification>
+            <cbc:ID>BART54321</cbc:ID>
+         </cac:BuyersItemIdentification>
+         <cac:SellersItemIdentification>
+            <cbc:ID>AR54321</cbc:ID>
+         </cac:SellersItemIdentification>
+         <cac:ClassifiedTaxCategory>
+            <cbc:ID>S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+               <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+         </cac:ClassifiedTaxCategory>
+      </cac:Item>
+      <cac:Price>
+         <cbc:PriceAmount currencyID="EUR">350</cbc:PriceAmount>
+      </cac:Price>
+   </cac:CreditNoteLine>
+</CreditNote>
