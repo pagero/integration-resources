@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CreditNote xmlns="urn:oasis:names:specification:ubl:schema:xsd:CreditNote-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:ccts="urn:un:unece:uncefact:documentation:2">
+    <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+    <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns014:ver2.0:extended:urn:www.peppol.eu:bis:peppol5a:ver2.0:extended:urn:www.difi.no:ehf:kreditnota:ver2.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:www.cenbii.eu:profile:bii05:ver2.0</cbc:ProfileID>
+    <cbc:ID>CRE-Discount-Charge-Test</cbc:ID>
+    <cbc:IssueDate>2023-03-06</cbc:IssueDate>
+    <cbc:Note>This is a free text on document level 1 This is a free text on document level 2</cbc:Note>
+    <cbc:DocumentCurrencyCode listID="ISO4217">NOK</cbc:DocumentCurrencyCode>
+    <cbc:AccountingCost>ACC123456</cbc:AccountingCost>
+    <cac:OrderReference>
+        <cbc:ID>PO12345678</cbc:ID>
+    </cac:OrderReference>
+    <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+            <cbc:ID>INV-1</cbc:ID>
+        </cac:InvoiceDocumentReference>
+    </cac:BillingReference>
+    <cac:ContractDocumentReference>
+        <cbc:ID>AGR1234567</cbc:ID>
+    </cac:ContractDocumentReference>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>179295553</cbc:ID>
+        <cbc:DocumentType>Related document</cbc:DocumentType>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="789112023_179295553.csv">VGhpcyxpcyxhIHRlc3QsdmFsdWUs</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+    <!-- Supplier party IDs are dummy values and are not valid Norwegian VAT or org numbers -->
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="GLN" schemeAgencyID="9">8808808000333</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Pagero Support</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:Department>Support</cbc:Department>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>222 22</cbc:PostalZone>
+                <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID schemeID="NO:VAT">223456789MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Pagero Support</cbc:RegistrationName>
+                <cbc:CompanyID>223456789</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>John Doe</cbc:ID>
+                <cbc:Name>John Doe</cbc:Name>
+                <cbc:Telephone>222 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+        <cac:AccountingContact>
+            <cbc:Telephone>222 121212</cbc:Telephone>
+            <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+            <cbc:Note>www.pagero.com</cbc:Note>
+        </cac:AccountingContact>
+    </cac:AccountingSupplierParty>
+    <!-- Customer party IDs are dummy values and are not valid Norwegian VAT or org numbers -->
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="GLN" schemeAgencyID="9">8808808000121</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test company</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street test 1</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>111 11</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1:Alpha2">NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID schemeID="NO:VAT">123456789MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Test company</cbc:RegistrationName>
+                <cbc:CompanyID>123456789</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>Department 3</cbc:ID>
+                <cbc:Name>Jane Doe</cbc:Name>
+                <cbc:Telephone>123 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Loyal client discount</cbc:AllowanceChargeReason>
+        <cbc:MultiplierFactorNumeric>0.020</cbc:MultiplierFactorNumeric>
+        <cbc:Amount currencyID="NOK">26.50</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:AllowanceCharge>
+        <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+        <cbc:AllowanceChargeReason>Freight charge</cbc:AllowanceChargeReason>
+        <cbc:Amount currencyID="NOK">30</cbc:Amount>
+        <cac:TaxCategory>
+            <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+            <cbc:Percent>25</cbc:Percent>
+            <cac:TaxScheme>
+                <cbc:ID>VAT</cbc:ID>
+            </cac:TaxScheme>
+        </cac:TaxCategory>
+    </cac:AllowanceCharge>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="NOK">332.13</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="NOK">1328.50</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="NOK">332.13</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID schemeID="UNCL5305" schemeAgencyID="6">S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="NOK">1325.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="NOK">1328.50</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="NOK">1660.63</cbc:TaxInclusiveAmount>
+        <cbc:AllowanceTotalAmount currencyID="NOK">26.50</cbc:AllowanceTotalAmount>
+        <cbc:ChargeTotalAmount currencyID="NOK">30.00</cbc:ChargeTotalAmount>
+        <cbc:PayableAmount currencyID="NOK">1660.63</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:CreditNoteLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:Note>This is a free text on line level</cbc:Note>
+        <cbc:CreditedQuantity unitCode="EA" unitCodeListID="UNECERec20">1</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="NOK">225.00</cbc:LineExtensionAmount>
+        <cbc:AccountingCost>ACC123456</cbc:AccountingCost>
+        <cac:OrderLineReference>
+            <cbc:LineID>1</cbc:LineID>
+            <cac:OrderReference>
+                <cbc:ID>PO12345678</cbc:ID>
+                <cbc:SalesOrderID>SO12345678</cbc:SalesOrderID>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="NOK">45.00</cbc:TaxAmount>
+        </cac:TaxTotal>
+        <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReason>Early purchase discount</cbc:AllowanceChargeReason>
+            <cbc:MultiplierFactorNumeric>0.100</cbc:MultiplierFactorNumeric>
+            <cbc:Amount currencyID="NOK">25.00</cbc:Amount>
+            <cac:TaxCategory>
+                <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:AllowanceCharge>
+        <cac:Item>
+            <cbc:Name>Article Name 1</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>BART12345</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>AR12345</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:CommodityClassification>
+                <cbc:ItemClassificationCode listID="HS">98-99</cbc:ItemClassificationCode>
+            </cac:CommodityClassification>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID schemeID="UNCL5305" schemeAgencyID="6">S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+            <cac:AdditionalItemProperty>
+                <cbc:Name>Serial Number</cbc:Name>
+                <cbc:Value>SN123456</cbc:Value>
+            </cac:AdditionalItemProperty>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="NOK">250</cbc:PriceAmount>
+            <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+        </cac:Price>
+    </cac:CreditNoteLine>
+    <cac:CreditNoteLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:CreditedQuantity unitCode="BX" unitCodeListID="UNECERec20">3</cbc:CreditedQuantity>
+        <cbc:LineExtensionAmount currencyID="NOK">1100.00</cbc:LineExtensionAmount>
+        <cbc:AccountingCost>ACC123456</cbc:AccountingCost>
+        <cac:OrderLineReference>
+            <cbc:LineID>2</cbc:LineID>
+            <cac:OrderReference>
+                <cbc:ID>PO12345678</cbc:ID>
+                <cbc:SalesOrderID>SO12345678</cbc:SalesOrderID>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:TaxTotal>
+            <cbc:TaxAmount currencyID="NOK">275.00</cbc:TaxAmount>
+        </cac:TaxTotal>
+        <cac:AllowanceCharge>
+            <cbc:ChargeIndicator>true</cbc:ChargeIndicator>
+            <cbc:AllowanceChargeReason>Warehouse fee</cbc:AllowanceChargeReason>
+            <cbc:Amount currencyID="NOK">50</cbc:Amount>
+            <cac:TaxCategory>
+                <cbc:ID schemeID="UNCL5305">S</cbc:ID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:AllowanceCharge>
+        <cac:Item>
+            <cbc:Name>Article Name 2</cbc:Name>
+            <cac:BuyersItemIdentification>
+                <cbc:ID>BART54321</cbc:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cbc:ID>AR54321</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID schemeID="UNCL5305" schemeAgencyID="6">S</cbc:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="NOK">350</cbc:PriceAmount>
+            <cbc:OrderableUnitFactorRate>1</cbc:OrderableUnitFactorRate>
+        </cac:Price>
+    </cac:CreditNoteLine>
+</CreditNote>

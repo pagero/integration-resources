@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Interchange xmlns="http://www.e2b.no/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.e2b.no/XMLSchema e2b_Invoice_Interchange_v3p41.xsd">
+    <InterchangeHeader>
+        <Version>1.1</Version>
+        <InterchangeId>789112023</InterchangeId>
+        <InterchangeTime>2023-03-06T14:56:55.771Z</InterchangeTime>
+        <Originator>
+            <Address>123456-0000</Address>
+            <AddressQualifier>OrgNr-Avd</AddressQualifier>
+        </Originator>
+        <Recipient>
+            <Address>12345678901</Address>
+            <AddressQualifier>OrgNr-Avd</AddressQualifier>
+        </Recipient>
+    </InterchangeHeader>
+    <MessageHeader>
+        <Version>1.1</Version>
+        <DocumentType>
+            <DocumentCode>e2b</DocumentCode>
+            <DocumentDescriptiveName/>
+        </DocumentType>
+        <MessageReference>INV-Discount-Charge-Test</MessageReference>
+        <MessageOwner>e2b</MessageOwner>
+        <MessageType>e2bInvoice</MessageType>
+        <MessageVersion>3.4.1</MessageVersion>
+        <language>NO</language>
+        <MessageOriginator>
+            <Address>SE0000000001</Address>
+            <SubAddress>Pagero Support</SubAddress>
+            <AddressQualifier>OrgNr-Avd</AddressQualifier>
+        </MessageOriginator>
+        <MessageRecipient>
+            <Address/>
+            <SubAddress>Test company</SubAddress>
+            <AddressQualifier>OrgNr-Avd</AddressQualifier>
+        </MessageRecipient>
+        <Attachment type="INCLUDED">
+            <AttachmentNumber>1</AttachmentNumber>
+            <CopyIndicator>NO</CopyIndicator>
+            <AttachmentType>text/csv</AttachmentType>
+            <AttachmentName>789112023_179295553.csv</AttachmentName>
+            <CustomContent>
+                <Base64>VGhpcyxpcyxhIHRlc3QsdmFsdWUs</Base64>
+            </CustomContent>
+        </Attachment>
+    </MessageHeader>
+    <Invoice MessageOwner="e2b" MessageType="Invoice" MessageVersion="3.4.1">
+        <MessageNumber>1</MessageNumber>
+        <MessageTimestamp>2023-03-06T14:56:55.771Z</MessageTimestamp>
+        <InvoiceHeader>
+            <InvoiceType>380</InvoiceType>
+            <InvoiceStatus>10</InvoiceStatus>
+            <InvoiceNumber>INV-Discount-Charge-Test</InvoiceNumber>
+            <InvoiceDate>2023-03-06</InvoiceDate>
+            <Supplier>
+                <PartyId>123456-0000</PartyId>
+                <LocationId>123456-0000</LocationId>
+                <Name>Pagero Support</Name>
+                <ContactInformation>
+                    <PhoneNumber>222 121212</PhoneNumber>
+                    <EmailAddress>test1@test.pagero.com</EmailAddress>
+                    <WebAddress>www.pagero.com</WebAddress>
+                </ContactInformation>
+                <PostalAddress>
+                    <Address1>Street test 2</Address1>
+                    <PostalCode>222 22</PostalCode>
+                    <PostalDistrict>Test city</PostalDistrict>
+                    <CountryCode>SE</CountryCode>
+                </PostalAddress>
+                <ContactPerson>
+                    <Name>John Doe</Name>
+                    <ContactInformation>
+                        <PhoneNumber>222 121212</PhoneNumber>
+                        <EmailAddress>test1@test.pagero.com</EmailAddress>
+                    </ContactInformation>
+                </ContactPerson>
+                <OrgNumber>98765432101</OrgNumber>
+                <VatId>SE98765432101</VatId>
+                <Department>Support</Department>
+                <AccountInformation>
+                    <AccountNumber>12345678</AccountNumber>
+                    <IbanNumber>SE18CITT30004512345678</IbanNumber>
+                    <SwiftNumber>CITTSE2L</SwiftNumber>
+                </AccountInformation>
+            </Supplier>
+            <Buyer>
+                <LocationId schemeId="GLN" schemeName="Global Localisation Number" schemeAgencyName="GS1">8808808000121</LocationId>
+                <Name>Test company</Name>
+                <ContactInformation>
+                    <PhoneNumber>123 121212</PhoneNumber>
+                    <EmailAddress>test@test.pagero.com</EmailAddress>
+                </ContactInformation>
+                <PostalAddress>
+                    <Address1>Street test 1</Address1>
+                    <PostalCode>111 11</PostalCode>
+                    <PostalDistrict>Test city</PostalDistrict>
+                    <CountryCode>SE</CountryCode>
+                </PostalAddress>
+                <ContactPerson>
+                    <Name>Jane Doe</Name>
+                    <ContactInformation>
+                        <PhoneNumber>123 121212</PhoneNumber>
+                        <EmailAddress>test@test.pagero.com</EmailAddress>
+                    </ContactInformation>
+                </ContactPerson>
+                <OrgNumber>12345678901</OrgNumber>
+                <Ref>
+                    <Code>BuyerReference</Code>
+                    <Text>Department 3</Text>
+                </Ref>
+            </Buyer>
+            <InvoiceReferences>
+                <BuyersOrderNumber>PO12345678</BuyersOrderNumber>
+            </InvoiceReferences>
+            <Payment>
+                <DueDate>2023-04-05</DueDate>
+                <Currency>EUR</Currency>
+                <PaymentTerms>30 days net</PaymentTerms>
+                <OverDuePercent>3</OverDuePercent>
+            </Payment>
+            <Attachments>789112023_179295553.csv</Attachments>
+            <Ref>
+                <Code>BuyerReference</Code>
+                <Text>Department 3</Text>
+            </Ref>
+            <FreeText>This is a free text on document level 1</FreeText>
+            <FreeText>This is a free text on document level 2</FreeText>
+        </InvoiceHeader>
+        <InvoiceDetails>
+            <BaseItemDetails>
+                <LineItemNum>1</LineItemNum>
+                <SuppliersProductId>AR12345</SuppliersProductId>
+                <Description>Article Name 1</Description>
+                <BuyersProductId>BART12345</BuyersProductId>
+                <UnitPrice>250.00</UnitPrice>
+                <LineItemAmount>225.00</LineItemAmount>
+                <LineItemGrossAmount>270.00</LineItemGrossAmount>
+                <QuantityInvoiced>1.00</QuantityInvoiced>
+                <UnitOfMeasure>EA</UnitOfMeasure>
+                <OrderInformation>
+                    <LineNum>1</LineNum>
+                </OrderInformation>
+                <VatInfo>
+                    <VatPercent>20</VatPercent>
+                    <VatAmount>45.00</VatAmount>
+                </VatInfo>
+                <Discount>
+                    <Description>Early purchase discount</Description>
+                    <Percent>10</Percent>
+                    <Amount>25.00</Amount>
+                </Discount>
+                <FreeText>orderno:SO12345678,POno:PO12345678</FreeText>
+                <FreeText>This is a free text on line level</FreeText>
+            </BaseItemDetails>
+            <BaseItemDetails>
+                <LineItemNum>2</LineItemNum>
+                <SuppliersProductId>AR54321</SuppliersProductId>
+                <Description>Article Name 2</Description>
+                <BuyersProductId>BART54321</BuyersProductId>
+                <UnitPrice>350.00</UnitPrice>
+                <LineItemAmount>1100.00</LineItemAmount>
+                <LineItemGrossAmount>1375.00</LineItemGrossAmount>
+                <QuantityInvoiced>3.00</QuantityInvoiced>
+                <UnitOfMeasure>BX</UnitOfMeasure>
+                <VatInfo>
+                    <VatPercent>25</VatPercent>
+                    <VatAmount>275.00</VatAmount>
+                </VatInfo>
+                <Charges>
+                    <Code>ZZZ</Code>
+                    <Description>Warehouse fee</Description>
+                    <Amount>50.00</Amount>
+                </Charges>
+                <StartDate>2023-03-02</StartDate>
+                <EndDate>2023-03-03</EndDate>
+                <FreeText>Leveranse/deliveryNoteNo:DN98989898</FreeText>
+            </BaseItemDetails>
+        </InvoiceDetails>
+        <InvoiceDiscountChargesAndTax>
+            <InvoiceDiscount>
+                <Description>Loyal client discount</Description>
+                <Percent>2</Percent>
+                <Amount>26.50</Amount>
+            </InvoiceDiscount>
+            <InvoiceCharges>
+                <Description>Freight charge</Description>
+                <Amount>30.00</Amount>
+                <VatInfo>
+                    <VatPercent>25</VatPercent>
+                </VatInfo>
+            </InvoiceCharges>
+        </InvoiceDiscountChargesAndTax>
+        <InvoiceSummary>
+            <InvoiceTotals>
+                <GrossAmount>1649.38</GrossAmount>
+                <VatTotalsAmount>320.88</VatTotalsAmount>
+                <NetAmount>1328.50</NetAmount>
+            </InvoiceTotals>
+            <VatTotalsInfo>
+                <VatPercent>25</VatPercent>
+                <VatBaseAmount>1103.50</VatBaseAmount>
+                <VatAmount>275.88</VatAmount>
+            </VatTotalsInfo>
+            <VatTotalsInfo>
+                <VatPercent>20</VatPercent>
+                <VatBaseAmount>225.00</VatBaseAmount>
+                <VatAmount>45.00</VatAmount>
+            </VatTotalsInfo>
+        </InvoiceSummary>
+    </Invoice>
+</Interchange>

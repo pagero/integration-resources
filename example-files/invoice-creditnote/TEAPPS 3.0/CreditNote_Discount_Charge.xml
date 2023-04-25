@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<INVOICE_CENTER>
+    <TRANSPORT_FRAME>
+        <TF_CODE>TF01</TF_CODE>
+        <TIMESTAMP>20230306145655</TIMESTAMP>
+        <BATCH_ID>789112023</BATCH_ID>
+        <CONTENT_RECEIVER>
+            <RECEIVER_REF> </RECEIVER_REF>
+            <INTERMEDIATOR>Pagero</INTERMEDIATOR>
+            <CONTENT_REF>789112023</CONTENT_REF>
+        </CONTENT_RECEIVER>
+        <SENDER>PAGERO</SENDER>
+        <INTERMEDIATOR>Pagero</INTERMEDIATOR>
+        <FB_REQUEST>1</FB_REQUEST>
+    </TRANSPORT_FRAME>
+    <CONTENT_FRAME>
+        <CF_CODE>CF01</CF_CODE>
+        <NET_SERVICE_ID>PAGERO</NET_SERVICE_ID>
+        <INTERMEDIATOR>Pagero</INTERMEDIATOR>
+        <BLOCK_ID>789112023</BLOCK_ID>
+        <TIMESTAMP>20230306145655</TIMESTAMP>
+        <BLOCK_RULES>
+            <TRANSACTION_TYPE>00</TRANSACTION_TYPE>
+            <BLOCK_ACTION>00</BLOCK_ACTION>
+            <BLOCK_FORMAT>TEAPPSXML</BLOCK_FORMAT>
+            <FORMAT_VERSION>3.0</FORMAT_VERSION>
+            <CHARACTER_SET>ISO-8859-1</CHARACTER_SET>
+        </BLOCK_RULES>
+        <BLOCK_SUMMARY>
+            <COUNT>1</COUNT>
+            <TOTAL>
+                <AMOUNT SIGN="-" VAT="INCLUDED">1649.38</AMOUNT>
+            </TOTAL>
+        </BLOCK_SUMMARY>
+        <INVOICES>
+            <INVOICE>
+                <CONTROL>
+                    <IMAGE_CONTROL TYPE="VOUCHER_MEMO" SOURCE="ORIGINAL">
+                        <IMAGE_FILE>789112023_179295553.csv</IMAGE_FILE>
+                    </IMAGE_CONTROL>
+                </CONTROL>
+                <HEADER>
+                    <INVOICE_ID>CRN-Discount-Charge-Test</INVOICE_ID>
+                    <PROCESS_CODE>00</PROCESS_CODE>
+                    <INVOICE_TYPE UNTDID_CODE="381">01</INVOICE_TYPE>
+                    <METHOD_OF_CHARGE>00</METHOD_OF_CHARGE>
+                    <CREDIT_INVOICE_NUMBER>INV-REF</CREDIT_INVOICE_NUMBER>
+                    <INVOICE_DATE>
+                        <DATE>
+                            <DAY>06</DAY>
+                            <MONTH>03</MONTH>
+                            <CENTURY>20</CENTURY>
+                            <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                        </DATE>
+                    </INVOICE_DATE>
+                    <DUE_DATE>
+                        <DATE>
+                            <DAY>05</DAY>
+                            <MONTH>04</MONTH>
+                            <CENTURY>20</CENTURY>
+                            <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                        </DATE>
+                    </DUE_DATE>
+                    <TERMS_OF_PAYMENT>30 days net</TERMS_OF_PAYMENT>
+                    <PAYMENT_OVERDUE_FINE>
+                        <INTEREST_RATE>3</INTEREST_RATE>
+                    </PAYMENT_OVERDUE_FINE>
+                    <CURRENCY>
+                        <CODE>EUR</CODE>
+                    </CURRENCY>
+                    <PAYMENT_SUBJECT_CODE>89</PAYMENT_SUBJECT_CODE>
+                    <ORDER_INFORMATION ORDER_TYPE="CO">
+                        <ORDER_REFERENCE>Department 3</ORDER_REFERENCE>
+                    </ORDER_INFORMATION>
+                    <BUYER_REFERENCE>Department 3</BUYER_REFERENCE>
+                    <FREE_TEXT>This is a free text on document level 1</FREE_TEXT>
+                    <FREE_TEXT>This is a free text on document level 2</FREE_TEXT>
+                </HEADER>
+                <INVOICE_SENDER>
+                    <CUSTOMER_INFORMATION>
+                        <CUSTOMER_NAME>Pagero Support</CUSTOMER_NAME>
+                        <ADDRESS>
+                            <STREET_ADDRESS1>Street test 2</STREET_ADDRESS1>
+                            <SUBDIVISION>AA</SUBDIVISION>
+                            <POSTAL_CODE>222 22</POSTAL_CODE>
+                            <POST_OFFICE>Test city</POST_OFFICE>
+                            <COUNTRY_CODE>DE</COUNTRY_CODE>
+                        </ADDRESS>
+                        <VAT_NUMBER>FI0000000001</VAT_NUMBER>
+                        <ORGANIZATION_NUMBER>123456-0000</ORGANIZATION_NUMBER>
+                        <PARTY_IDENTIFICATION_ID SCHEME_ID="0037" AUTHORITY="EDI">0037123456</PARTY_IDENTIFICATION_ID>
+                        <ORGANIZATION_DEPARTMENT>Support</ORGANIZATION_DEPARTMENT>
+                        <CONTACT_INFORMATION>
+                            <CONTACT_PERSON>John Doe</CONTACT_PERSON>
+                            <TELEPHONE_NUMBER>222 121212</TELEPHONE_NUMBER>
+                            <TELEPHONE_NUMBER>222 121212</TELEPHONE_NUMBER>
+                            <E-MAIL_ADDRESS>test1@test.pagero.com</E-MAIL_ADDRESS>
+                        </CONTACT_INFORMATION>
+                        <E-MAIL_ADDRESS>test1@test.pagero.com</E-MAIL_ADDRESS>
+                        <LINKS>
+                            <LINK OBJECT="SellerWebAddressIdentifier">www.pagero.com</LINK>
+                        </LINKS>
+                    </CUSTOMER_INFORMATION>
+                </INVOICE_SENDER>
+                <PAYEE>
+                    <CUSTOMER_INFORMATION>
+                        <CUSTOMER_NAME>Pagero Support</CUSTOMER_NAME>
+                        <ADDRESS>
+                            <STREET_ADDRESS1>Street test 2</STREET_ADDRESS1>
+                            <SUBDIVISION>AA</SUBDIVISION>
+                            <POSTAL_CODE>222 22</POSTAL_CODE>
+                            <POST_OFFICE>Test city</POST_OFFICE>
+                            <COUNTRY_CODE>FI</COUNTRY_CODE>
+                        </ADDRESS>
+                        <VAT_NUMBER>FI0000000001</VAT_NUMBER>
+                        <ORGANIZATION_NUMBER>123456-0000</ORGANIZATION_NUMBER>
+                        <PARTY_IDENTIFICATION_ID SCHEME_ID="0037" AUTHORITY="EDI">0037123456</PARTY_IDENTIFICATION_ID>
+                        <ORGANIZATION_DEPARTMENT>Support</ORGANIZATION_DEPARTMENT>
+                        <CONTACT_INFORMATION>
+                            <CONTACT_PERSON>John Doe</CONTACT_PERSON>
+                            <TELEPHONE_NUMBER>222 121212</TELEPHONE_NUMBER>
+                            <TELEPHONE_NUMBER>222 121212</TELEPHONE_NUMBER>
+                            <E-MAIL_ADDRESS>test1@test.pagero.com</E-MAIL_ADDRESS>
+                        </CONTACT_INFORMATION>
+                        <E-MAIL_ADDRESS>test1@test.pagero.com</E-MAIL_ADDRESS>
+                        <LINKS>
+                            <LINK OBJECT="SellerWebAddressIdentifier">www.pagero.com</LINK>
+                        </LINKS>
+                    </CUSTOMER_INFORMATION>
+                    <BANKS>
+                        <BANK_ADDRESS>XXX</BANK_ADDRESS>
+                        <BANK_ACCOUNT_NUMBER>30004512345678</BANK_ACCOUNT_NUMBER>
+                        <SWIFT_CODE>CITTGB2L</SWIFT_CODE>
+                        <IBAN_ACCOUNT_NUMBER>GB18CITT30004512345678</IBAN_ACCOUNT_NUMBER>
+                    </BANKS>
+                    <NET_SERVICE_ID>0037123456</NET_SERVICE_ID>
+                    <INTERMEDIATOR>Pagero</INTERMEDIATOR>
+                    <EADDRESS_SCHEME_ID_CODE>0037</EADDRESS_SCHEME_ID_CODE>
+                    <PAYMENT_MEANS PAYMENT_MEANS_CODE="30">Credit transfer</PAYMENT_MEANS>
+                    <DETAILS_OF_PAYMENT MESSAGE_TYPE="OCR">
+                        <FI_PAYMENT_REFERENCE/>
+                    </DETAILS_OF_PAYMENT>
+                </PAYEE>
+                <INVOICE_RECIPIENT>
+                    <CUSTOMER_INFORMATION>
+                        <CUSTOMER_NAME>Test company</CUSTOMER_NAME>
+                        <ADDRESS>
+                            <STREET_ADDRESS1>Street test 1</STREET_ADDRESS1>
+                            <POSTAL_CODE>111 11</POSTAL_CODE>
+                            <POST_OFFICE>Test city</POST_OFFICE>
+                            <COUNTRY_CODE>FI</COUNTRY_CODE>
+                        </ADDRESS>
+                        <ORGANIZATION_NUMBER>8808808-0000</ORGANIZATION_NUMBER>
+                        <PARTY_IDENTIFICATION_ID SCHEME_ID="0088" AUTHORITY="GLN">8808808000121</PARTY_IDENTIFICATION_ID>
+                        <TRADE_REGISTRY_NUMBER>8808808000121</TRADE_REGISTRY_NUMBER>
+                        <CONTACT_INFORMATION>
+                            <CONTACT_PERSON>Jane Doe</CONTACT_PERSON>
+                            <TELEPHONE_NUMBER>123 121212</TELEPHONE_NUMBER>
+                            <TELEPHONE_NUMBER>123 121212</TELEPHONE_NUMBER>
+                            <E-MAIL_ADDRESS>test@test.pagero.com</E-MAIL_ADDRESS>
+                        </CONTACT_INFORMATION>
+                        <E-MAIL_ADDRESS>test@test.pagero.com</E-MAIL_ADDRESS>
+                    </CUSTOMER_INFORMATION>
+                </INVOICE_RECIPIENT>
+                <RECEIVER>
+                    <CUSTOMER_INFORMATION>
+                        <CUSTOMER_NAME>Test company</CUSTOMER_NAME>
+                        <ADDRESS>
+                            <STREET_ADDRESS1>Street test 1</STREET_ADDRESS1>
+                            <POSTAL_CODE>111 11</POSTAL_CODE>
+                            <POST_OFFICE>Test city</POST_OFFICE>
+                            <COUNTRY_CODE>FI</COUNTRY_CODE>
+                        </ADDRESS>
+                        <ORGANIZATION_NUMBER>8808808-0000</ORGANIZATION_NUMBER>
+                        <PARTY_IDENTIFICATION_ID SCHEME_ID="0088" AUTHORITY="GLN">8808808000121</PARTY_IDENTIFICATION_ID>
+                        <TRADE_REGISTRY_NUMBER>8808808000121</TRADE_REGISTRY_NUMBER>
+                        <CONTACT_INFORMATION>
+                            <CONTACT_PERSON>Jane Doe</CONTACT_PERSON>
+                            <TELEPHONE_NUMBER>123 121212</TELEPHONE_NUMBER>
+                            <TELEPHONE_NUMBER>123 121212</TELEPHONE_NUMBER>
+                            <E-MAIL_ADDRESS>test@test.pagero.com</E-MAIL_ADDRESS>
+                        </CONTACT_INFORMATION>
+                        <E-MAIL_ADDRESS>test@test.pagero.com</E-MAIL_ADDRESS>
+                    </CUSTOMER_INFORMATION>
+                    <NET_SERVICE_ID>8808808000121</NET_SERVICE_ID>
+                    <INTERMEDIATOR>Pagero</INTERMEDIATOR>
+                    <EADDRESS_SCHEME_ID_CODE>0088</EADDRESS_SCHEME_ID_CODE>
+                </RECEIVER>
+                <ORDERER>
+                    <CUSTOMER_INFORMATION>
+                        <CUSTOMER_NAME>Test company</CUSTOMER_NAME>
+                        <ADDRESS>
+                            <STREET_ADDRESS1>Street test 1</STREET_ADDRESS1>
+                            <POSTAL_CODE>111 11</POSTAL_CODE>
+                            <POST_OFFICE>Test city</POST_OFFICE>
+                            <COUNTRY_CODE>FI</COUNTRY_CODE>
+                        </ADDRESS>
+                        <ORGANIZATION_NUMBER>8808808-0000</ORGANIZATION_NUMBER>
+                        <PARTY_IDENTIFICATION_ID SCHEME_ID="0088" AUTHORITY="GLN">8808808000121</PARTY_IDENTIFICATION_ID>
+                        <TRADE_REGISTRY_NUMBER>8808808000121</TRADE_REGISTRY_NUMBER>
+                        <CONTACT_INFORMATION>
+                            <CONTACT_PERSON>Jane Doe</CONTACT_PERSON>
+                            <TELEPHONE_NUMBER>123 121212</TELEPHONE_NUMBER>
+                            <TELEPHONE_NUMBER>123 121212</TELEPHONE_NUMBER>
+                            <E-MAIL_ADDRESS>test@test.pagero.com</E-MAIL_ADDRESS>
+                        </CONTACT_INFORMATION>
+                        <E-MAIL_ADDRESS>test@test.pagero.com</E-MAIL_ADDRESS>
+                    </CUSTOMER_INFORMATION>
+                </ORDERER>
+                <ROWS>
+                    <ROW>
+                        <ROW_NUMBER>1</ROW_NUMBER>
+                        <ARTICLE>
+                            <ARTICLE_ID>AR12345</ARTICLE_ID>
+                            <ARTICLE_NAME>Article Name 1</ARTICLE_NAME>
+                            <SUPPLIER_ARTICLE_ID>AR12345</SUPPLIER_ARTICLE_ID>
+                            <PRODUCT_GROUP SCHEME_ID="HS">98-99</PRODUCT_GROUP>
+                            <ARTICLE_DESCRIPTIONS>
+                                <ARTICLE_DESCRIPTION>
+                                    <DESCRIPTION_TYPE>Serial Number</DESCRIPTION_TYPE>
+                                    <DESCRIPTION_VALUE>SN123456</DESCRIPTION_VALUE>
+                                </ARTICLE_DESCRIPTION>
+                            </ARTICLE_DESCRIPTIONS>
+                        </ARTICLE>
+                        <QUANTITY>
+                            <CHARGED Q_UNIT="EA" Q_UNIT_UNECE_CODE="EA" SIGN="-">1</CHARGED>
+                        </QUANTITY>
+                        <ORDER_REFERENCE>PO12345678</ORDER_REFERENCE>
+                        <ORDER_NUMBER>SO12345678</ORDER_NUMBER>
+                        <ORDER_DATE>
+                            <DATE>
+                                <DAY>31</DAY>
+                                <MONTH>01</MONTH>
+                                <CENTURY>20</CENTURY>
+                                <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                            </DATE>
+                        </ORDER_DATE>
+                        <ORDER_INFORMATION ORDER_TYPE="CO">
+                            <ORDER_NUMBER>PO12345678</ORDER_NUMBER>
+                            <ORDER_DATE>
+                                <DATE>
+                                    <DAY>31</DAY>
+                                    <MONTH>01</MONTH>
+                                    <CENTURY>20</CENTURY>
+                                    <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                                </DATE>
+                            </ORDER_DATE>
+                            <ORDER_POSITION>1</ORDER_POSITION>
+                        </ORDER_INFORMATION>
+                        <ORDER_INFORMATION ORDER_TYPE="VN">
+                            <ORDER_NUMBER>SO12345678</ORDER_NUMBER>
+                            <ORDER_DATE>
+                                <DATE>
+                                    <DAY>01</DAY>
+                                    <MONTH>02</MONTH>
+                                    <CENTURY>20</CENTURY>
+                                    <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                                </DATE>
+                            </ORDER_DATE>
+                        </ORDER_INFORMATION>
+                        <PROJECT_INFORMATION>
+                            <PROJECT_NUMBER>PN123456</PROJECT_NUMBER>
+                        </PROJECT_INFORMATION>
+                        <UNIT>EA</UNIT>
+                        <PRICE_PER_UNIT PR_UNIT="EA" PR_UNIT_UNECE_CODE="EA">
+                            <AMOUNT SIGN="+" VAT="EXCLUDED">250.00</AMOUNT>
+                        </PRICE_PER_UNIT>
+                        <PRICE_PER_UNIT_NET>
+                            <AMOUNT SIGN="+" VAT="EXCLUDED">250.00</AMOUNT>
+                        </PRICE_PER_UNIT_NET>
+                        <DISCOUNT>
+                            <DISCOUNT_NAME>Early purchase discount</DISCOUNT_NAME>
+                            <PER_CENT>10.00</PER_CENT>
+                            <DISCOUNT_AMOUNT>
+                                <AMOUNT SIGN="-" VAT="EXCLUDED">25.00</AMOUNT>
+                            </DISCOUNT_AMOUNT>
+                        </DISCOUNT>
+                        <ROW_TOTAL>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">225.00</AMOUNT>
+                            <AMOUNT SIGN="-" VAT="INCLUDED">270.00</AMOUNT>
+                        </ROW_TOTAL>
+                        <ROW_AMOUNT>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">250.00</AMOUNT>
+                        </ROW_AMOUNT>
+                        <VAT VAT_TYPE="S">
+                            <RATE>20</RATE>
+                            <VAT_AMOUNT>
+                                <AMOUNT SIGN="-" VAT="EXCLUDED">45.00</AMOUNT>
+                            </VAT_AMOUNT>
+                        </VAT>
+                        <RECEIVER_PRODUCT_CODE>BART12345</RECEIVER_PRODUCT_CODE>
+                        <FREE_TEXT TEXT_TYPE="Line text">This is a free text on line level</FREE_TEXT>
+                    </ROW>
+                    <ROW>
+                        <ROW_NUMBER>2</ROW_NUMBER>
+                        <ARTICLE>
+                            <ARTICLE_ID>AR54321</ARTICLE_ID>
+                            <ARTICLE_NAME>Article Name 2</ARTICLE_NAME>
+                            <DELIVERY_DATE>
+                                <DATE>
+                                    <DAY>02</DAY>
+                                    <MONTH>03</MONTH>
+                                    <CENTURY>20</CENTURY>
+                                    <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                                </DATE>
+                            </DELIVERY_DATE>
+                            <SUPPLIER_ARTICLE_ID>AR54321</SUPPLIER_ARTICLE_ID>
+                        </ARTICLE>
+                        <START_PERIOD>
+                            <DATE>
+                                <DAY>02</DAY>
+                                <MONTH>03</MONTH>
+                                <CENTURY>20</CENTURY>
+                                <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                            </DATE>
+                            <TIME>
+                                <HOUR>00</HOUR>
+                                <MINUTE>00</MINUTE>
+                                <SECOND>00</SECOND>
+                            </TIME>
+                        </START_PERIOD>
+                        <END_PERIOD>
+                            <DATE>
+                                <DAY>03</DAY>
+                                <MONTH>03</MONTH>
+                                <CENTURY>20</CENTURY>
+                                <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                            </DATE>
+                            <TIME>
+                                <HOUR>00</HOUR>
+                                <MINUTE>00</MINUTE>
+                                <SECOND>00</SECOND>
+                            </TIME>
+                        </END_PERIOD>
+                        <QUANTITY>
+                            <CHARGED Q_UNIT="BX" Q_UNIT_UNECE_CODE="XBX" SIGN="-">3</CHARGED>
+                        </QUANTITY>
+                        <PROJECT_INFORMATION>
+                            <PROJECT_NUMBER>PN123456</PROJECT_NUMBER>
+                        </PROJECT_INFORMATION>
+                        <NOTE_NUMBER>DN98989898</NOTE_NUMBER>
+                        <TRANSPORT_DATE>
+                            <DATE>
+                                <DAY>02</DAY>
+                                <MONTH>03</MONTH>
+                                <CENTURY>20</CENTURY>
+                                <DECADE_AND_YEAR>23</DECADE_AND_YEAR>
+                            </DATE>
+                        </TRANSPORT_DATE>
+                        <UNIT>BX</UNIT>
+                        <PRICE_PER_UNIT PR_UNIT="BX" PR_UNIT_UNECE_CODE="XBX">
+                            <AMOUNT SIGN="+" VAT="EXCLUDED">350.00</AMOUNT>
+                        </PRICE_PER_UNIT>
+                        <PRICE_PER_UNIT_NET>
+                            <AMOUNT SIGN="+" VAT="EXCLUDED">350.00</AMOUNT>
+                        </PRICE_PER_UNIT_NET>
+                        <ROW_CHARGE TYPE="ZZZ">
+                            <CHARGE_NAME>Warehouse fee</CHARGE_NAME>
+                            <CHARGE_AMOUNT>
+                                <AMOUNT SIGN="-" VAT="EXCLUDED">50.00</AMOUNT>
+                            </CHARGE_AMOUNT>
+                        </ROW_CHARGE>
+                        <ROW_TOTAL>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">1100.00</AMOUNT>
+                            <AMOUNT SIGN="-" VAT="INCLUDED">1375.00</AMOUNT>
+                        </ROW_TOTAL>
+                        <ROW_AMOUNT>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">1050.00</AMOUNT>
+                        </ROW_AMOUNT>
+                        <VAT VAT_TYPE="S">
+                            <RATE>25</RATE>
+                            <VAT_AMOUNT>
+                                <AMOUNT SIGN="-" VAT="EXCLUDED">275.00</AMOUNT>
+                            </VAT_AMOUNT>
+                        </VAT>
+                        <RECEIVER_PRODUCT_CODE>BART54321</RECEIVER_PRODUCT_CODE>
+                    </ROW>
+                </ROWS>
+                <SUMMARY>
+                    <ROWS_TOTAL>
+                        <AMOUNT SIGN="-" VAT="EXCLUDED">1325.00</AMOUNT>
+                    </ROWS_TOTAL>
+                    <INVOICE_TOTAL>
+                        <AMOUNT SIGN="-" VAT="EXCLUDED">1328.50</AMOUNT>
+                        <AMOUNT SIGN="-" VAT="INCLUDED">1649.38</AMOUNT>
+                    </INVOICE_TOTAL>
+                    <VAT_SUMMARY VAT_TYPE="S">
+                        <RATE>25</RATE>
+                        <ACCORDING>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">1103.50</AMOUNT>
+                        </ACCORDING>
+                        <VAT_RATE_TOTAL>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">275.88</AMOUNT>
+                        </VAT_RATE_TOTAL>
+                        <CURRENCY_CODE>EUR</CURRENCY_CODE>
+                    </VAT_SUMMARY>
+                    <VAT_SUMMARY VAT_TYPE="S">
+                        <RATE>20</RATE>
+                        <ACCORDING>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">225.00</AMOUNT>
+                        </ACCORDING>
+                        <VAT_RATE_TOTAL>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">45.00</AMOUNT>
+                        </VAT_RATE_TOTAL>
+                        <CURRENCY_CODE>EUR</CURRENCY_CODE>
+                    </VAT_SUMMARY>
+                    <VAT_TOTAL>
+                        <AMOUNT SIGN="-" VAT="EXCLUDED">320.88</AMOUNT>
+                    </VAT_TOTAL>
+                    <DISCOUNT>
+                        <DISCOUNT_NAME>Loyal client discount</DISCOUNT_NAME>
+                        <PER_CENT>2.00</PER_CENT>
+                        <DISCOUNT_AMOUNT>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">26.50</AMOUNT>
+                        </DISCOUNT_AMOUNT>
+                        <VAT VAT_TYPE="S">
+                            <RATE>25</RATE>
+                        </VAT>
+                    </DISCOUNT>
+                    <DISCOUNTS_TOTAL>
+                        <AMOUNT SIGN="-" VAT="EXCLUDED">26.50</AMOUNT>
+                    </DISCOUNTS_TOTAL>
+                    <CHARGES TYPE="FC">
+                        <CHARGE_NAME>Freight charge</CHARGE_NAME>
+                        <CHARGE_AMOUNT>
+                            <AMOUNT SIGN="-" VAT="EXCLUDED">30.00</AMOUNT>
+                        </CHARGE_AMOUNT>
+                        <VAT VAT_TYPE="S">
+                            <RATE>25</RATE>
+                        </VAT>
+                    </CHARGES>
+                    <CHARGES_TOTAL>
+                        <AMOUNT SIGN="-" VAT="EXCLUDED">30.00</AMOUNT>
+                    </CHARGES_TOTAL>
+                    <INVOICE_TOTAL_WITHOUT_ADVANCE_PAYMENT>
+                        <AMOUNT SIGN="-" VAT="EXCLUDED">1328.50</AMOUNT>
+                        <AMOUNT SIGN="-" VAT="INCLUDED">1649.38</AMOUNT>
+                    </INVOICE_TOTAL_WITHOUT_ADVANCE_PAYMENT>
+                </SUMMARY>
+                <EpiDetails>
+                    <EpiIdentificationDetails>
+                        <EpiDate Format="CCYY-MM-DD">2023-03-06</EpiDate>
+                        <EpiReference/>
+                        <EpiUrl>www.pagero.com</EpiUrl>
+                        <EpiEmail>test1@test.pagero.com</EpiEmail>
+                    </EpiIdentificationDetails>
+                    <EpiPartyDetails>
+                        <EpiBfiPartyDetails>
+                            <EpiBfiIdentifier IdentificationSchemeName="BIC">CITTGB2L</EpiBfiIdentifier>
+                        </EpiBfiPartyDetails>
+                        <EpiBeneficiaryPartyDetails>
+                            <EpiAccountID IdentificationSchemeName="BBAN">30004512345678</EpiAccountID>
+                        </EpiBeneficiaryPartyDetails>
+                    </EpiPartyDetails>
+                    <EpiPaymentInstructionDetails>
+                        <EpiRemittanceInfoIdentifier IdentificationSchemeName="SPY">CRN-Discount-Charge-Test</EpiRemittanceInfoIdentifier>
+                        <EpiInstructedAmount AmountCurrencyIdentifier="EUR">1649.38</EpiInstructedAmount>
+                        <EpiCharge ChargeOption="SHA"/>
+                        <EpiDateOptionDate Format="CCYY-MM-DD">2023-04-05</EpiDateOptionDate>
+                    </EpiPaymentInstructionDetails>
+                </EpiDetails>
+            </INVOICE>
+        </INVOICES>
+    </CONTENT_FRAME>
+</INVOICE_CENTER>

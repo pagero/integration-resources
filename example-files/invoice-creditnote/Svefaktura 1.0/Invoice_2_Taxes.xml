@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns="urn:sfti:documents:BasicInvoice:1:0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:udt="urn:oasis:names:tc:ubl:UnspecializedDatatypes:1:0" xmlns:stat="urn:oasis:names:tc:ubl:codelist:DocumentStatusCode:1:0" xmlns:sst="urn:oasis:names:tc:ubl:codelist:SubstitutionStatusCode:1:0" xmlns:sdt="urn:oasis:names:tc:ubl:SpecializedDatatypes:1:0" xmlns:rsn="urn:oasis:names:tc:ubl:codelist:AllowanceChargeReasonCode:1:0" xmlns:pty="urn:oasis:names:tc:ubl:codelist:PaymentMeansCode:1:0" xmlns:lstat="urn:oasis:names:tc:ubl:codelist:LineStatusCode:1:0" xmlns:lon="urn:oasis:names:tc:ubl:codelist:LongitudeDirectionCode:1:0" xmlns:lat="urn:oasis:names:tc:ubl:codelist:LatitudeDirectionCode:1:0" xmlns:cur="urn:oasis:names:tc:ubl:codelist:CurrencyCode:1:0" xmlns:cnt="urn:oasis:names:tc:ubl:codelist:CountryIdentificationCode:1:0" xmlns:chn="urn:oasis:names:tc:ubl:codelist:ChannelCode:1:0" xmlns:chc="urn:oasis:names:tc:ubl:codelist:ChipCode:1:0"
+    xmlns:ccts="urn:oasis:names:tc:ubl:CoreComponentParameters:1:0" xmlns:cct="urn:oasis:names:tc:ubl:CoreComponentTypes:1:0" xmlns:cbc="urn:oasis:names:tc:ubl:CommonBasicComponents:1:0" xmlns:cac="urn:sfti:CommonAggregateComponents:1:0">
+    <ID>INV-2-Taxes-Test</ID>
+    <cbc:IssueDate>2023-03-06</cbc:IssueDate>
+    <InvoiceTypeCode>380</InvoiceTypeCode>
+    <cbc:Note>This is a free text on document level 1&#13; This is a free text on document level 2</cbc:Note>
+    <InvoiceCurrencyCode>EUR</InvoiceCurrencyCode>
+    <LineItemCountNumeric>2</LineItemCountNumeric>
+    <cac:BuyerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cac:ID identificationSchemeAgencyID="9">8808808000121</cac:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test company</cbc:Name>
+            </cac:PartyName>
+            <cac:Address>
+                <cbc:StreetName>Street test 1</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>11111</cbc:PostalZone>
+                <cac:Country>
+                    <cac:IdentificationCode>SE</cac:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+            <cac:PartyTaxScheme>
+                <cac:CompanyID>88088080000</cac:CompanyID>
+                <cac:TaxScheme>
+                    <cac:ID>SWT</cac:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:Contact>
+                <cbc:Name>Jane Doe</cbc:Name>
+                <cbc:Telephone>123121212</cbc:Telephone>
+                <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:BuyerParty>
+    <cac:SellerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cac:ID>1234560000</cac:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Pagero Support</cbc:Name>
+            </cac:PartyName>
+            <cac:Address>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:Department>Support</cbc:Department>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>22222</cbc:PostalZone>
+                <cac:Country>
+                    <cac:IdentificationCode>SE</cac:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+            <cac:PartyTaxScheme>
+                <cac:CompanyID>1234560000</cac:CompanyID>
+                <cac:TaxScheme>
+                    <cac:ID>SWT</cac:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyTaxScheme>
+                <cac:CompanyID>SE0000000001</cac:CompanyID>
+                <cac:TaxScheme>
+                    <cac:ID>VAT</cac:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:Contact>
+                <cbc:Name>Pagero Support</cbc:Name>
+                <cbc:Telephone>222121212</cbc:Telephone>
+                <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+        <cac:AccountsContact>
+            <cbc:Name>John Doe</cbc:Name>
+            <cbc:Telephone>222121212</cbc:Telephone>
+            <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+        </cac:AccountsContact>
+    </cac:SellerParty>
+    <cac:PaymentMeans>
+        <cac:PaymentMeansTypeCode>1</cac:PaymentMeansTypeCode>
+        <cbc:DuePaymentDate>2023-04-05</cbc:DuePaymentDate>
+        <cac:PayeeFinancialAccount>
+            <cac:ID>12345678</cac:ID>
+            <cac:FinancialInstitutionBranch>
+                <cac:FinancialInstitution>
+                    <cac:ID>CITTGB2L</cac:ID>
+                </cac:FinancialInstitution>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentMeans>
+        <cac:PaymentMeansTypeCode>1</cac:PaymentMeansTypeCode>
+        <cbc:DuePaymentDate>2023-04-05</cbc:DuePaymentDate>
+        <cac:PayeeFinancialAccount>
+            <cac:ID identificationSchemeName="IBAN">GB18CITT30004512345678</cac:ID>
+            <cac:FinancialInstitutionBranch>
+                <cac:FinancialInstitution>
+                    <cac:ID>CITTGB2L</cac:ID>
+                </cac:FinancialInstitution>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentTerms>
+        <cbc:Note>30 days net</cbc:Note>
+        <cbc:PenaltySurchargePercent>3</cbc:PenaltySurchargePercent>
+    </cac:PaymentTerms>
+    <cac:TaxTotal>
+        <cbc:TotalTaxAmount amountCurrencyID="EUR">150.00</cbc:TotalTaxAmount>
+        <cac:TaxSubTotal>
+            <cbc:TaxableAmount amountCurrencyID="EUR">600.00</cbc:TaxableAmount>
+            <cbc:TaxAmount amountCurrencyID="EUR">150.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cac:ID>S</cac:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cac:ID>VAT</cac:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubTotal>
+        <cac:TaxSubTotal>
+            <cbc:TaxableAmount amountCurrencyID="EUR">750.00</cbc:TaxableAmount>
+            <cbc:TaxAmount amountCurrencyID="EUR">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cac:ID>E</cac:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cbc:ExemptionReason>Exempted from tax</cbc:ExemptionReason>
+                <cac:TaxScheme>
+                    <cac:ID>VAT</cac:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubTotal>
+    </cac:TaxTotal>
+    <cac:LegalTotal>
+        <cbc:LineExtensionTotalAmount amountCurrencyID="EUR">1350.00</cbc:LineExtensionTotalAmount>
+        <cbc:TaxExclusiveTotalAmount amountCurrencyID="EUR">1350.00</cbc:TaxExclusiveTotalAmount>
+        <cbc:TaxInclusiveTotalAmount amountCurrencyID="EUR">1500.00</cbc:TaxInclusiveTotalAmount>
+    </cac:LegalTotal>
+    <cac:InvoiceLine>
+        <cac:ID>1</cac:ID>
+        <cbc:InvoicedQuantity quantityUnitCode="EA">3.00</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount amountCurrencyID="EUR">600.00</cbc:LineExtensionAmount>
+        <cbc:Note>This is a free text on line level&#13; Serial Number SN123456 </cbc:Note>
+        <cac:OrderLineReference>
+            <cac:BuyersLineID>1</cac:BuyersLineID>
+            <cac:OrderReference>
+                <cac:BuyersID>PO12345678</cac:BuyersID>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:Item>
+            <cbc:Description>Article Name 1</cbc:Description>
+            <cac:BuyersItemIdentification>
+                <cac:ID>BART12345</cac:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cac:ID>AR12345</cac:ID>
+            </cac:SellersItemIdentification>
+            <cac:TaxCategory>
+                <cac:ID>S</cac:ID>
+                <cbc:Percent>25</cbc:Percent>
+                <cac:TaxScheme>
+                    <cac:ID>VAT</cac:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+            <cac:BasePrice>
+                <cbc:PriceAmount amountCurrencyID="EUR">200</cbc:PriceAmount>
+            </cac:BasePrice>
+        </cac:Item>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cac:ID>2</cac:ID>
+        <cbc:InvoicedQuantity quantityUnitCode="BX">5.00</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount amountCurrencyID="EUR">750.00</cbc:LineExtensionAmount>
+        <cac:OrderLineReference>
+            <cac:BuyersLineID>2</cac:BuyersLineID>
+            <cac:OrderReference>
+                <cac:BuyersID>PO12345678</cac:BuyersID>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:DespatchLineReference>
+            <cac:LineID>N/A</cac:LineID>
+            <cac:DocumentReference>
+                <cac:ID>DN98989898</cac:ID>
+            </cac:DocumentReference>
+        </cac:DespatchLineReference>
+        <cac:Delivery>
+            <cbc:ActualDeliveryDateTime>2023-03-02T00:00:00</cbc:ActualDeliveryDateTime>
+        </cac:Delivery>
+        <cac:Item>
+            <cbc:Description>Article Name 2</cbc:Description>
+            <cac:BuyersItemIdentification>
+                <cac:ID>BART54321</cac:ID>
+            </cac:BuyersItemIdentification>
+            <cac:SellersItemIdentification>
+                <cac:ID>AR54321</cac:ID>
+            </cac:SellersItemIdentification>
+            <cac:TaxCategory>
+                <cac:ID>E</cac:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cbc:ExemptionReason>Exempted from tax</cbc:ExemptionReason>
+                <cac:TaxScheme>
+                    <cac:ID>VAT</cac:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+            <cac:BasePrice>
+                <cbc:PriceAmount amountCurrencyID="EUR">150</cbc:PriceAmount>
+            </cac:BasePrice>
+        </cac:Item>
+    </cac:InvoiceLine>
+    <RequisitionistDocumentReference>
+        <cac:ID>Department 3</cac:ID>
+    </RequisitionistDocumentReference>
+</Invoice>

@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.049/InvoiceDetail.dtd">
+<cXML payloadID="455797620" timestamp="2021-09-02T13:49:18.930Z" version="1.2.049">
+    <Header>
+        <From>
+            <Credential domain="NetworkID">
+                <Identity>120000-0000-T</Identity>
+            </Credential>
+            <Credential domain="LegalEntityID">
+                <Identity>120000-0000</Identity>
+            </Credential>
+            <Credential domain="TaxID">
+                <Identity>SE000000000001</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>0037000000006</Identity>
+            </Credential>
+            <Credential domain="OVT">
+                <Identity>0037000000006</Identity>
+            </Credential>
+            <Credential domain="PartnerID">
+                <Identity>SUPID0064160</Identity>
+            </Credential>
+        </From>
+        <To>
+            <Credential domain="LegalEntityID">
+                <Identity>8808808-0000</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>8808808000121</Identity>
+            </Credential>
+        </To>
+        <Sender>
+            <Credential domain="NetworkID">
+                <Identity>120000-0000-T</Identity>
+            </Credential>
+            <UserAgent>Pagero Online</UserAgent>
+        </Sender>
+    </Header>
+    <Request deploymentMode="test">
+        <InvoiceDetailRequest>
+            <InvoiceDetailRequestHeader invoiceDate="2021-09-02T00:00:00+02:00" invoiceID="111120210902" operation="new" purpose="standard">
+                <InvoiceDetailHeaderIndicator/>
+                <InvoiceDetailLineIndicator isTaxInLine="yes"/>
+                <InvoicePartner>
+                    <Contact role="from">
+                        <Name xml:lang="en-GB">Pagero Support</Name>
+                        <PostalAddress>
+                            <DeliverTo>John Doe</DeliverTo>
+                            <DeliverTo>Support</DeliverTo>
+                            <Street>Pagero AB i Göteborg</Street>
+                            <City>Göteborg</City>
+                            <PostalCode>10000</PostalCode>
+                            <Country isoCountryCode="SE">SE</Country>
+                        </PostalAddress>
+                        <Email>citest@test.pagero.com</Email>
+                    </Contact>
+                    <IdReference domain="accountID" identifier="1234-1234">
+                        <Creator xml:lang="en-GB"/>
+                    </IdReference>
+                    <IdReference domain="swiftID" identifier="BGABSESS"/>
+                    <IdReference domain="accountID" identifier="123456789101234">
+                        <Creator xml:lang="en-GB"/>
+                    </IdReference>
+                    <IdReference domain="swiftID" identifier="NDEASESS"/>
+                    <IdReference domain="bankBranchID" identifier="5555"/>
+                    <IdReference domain="bankNationalID" identifier="6598"/>
+                    <IdReference domain="ibanID" identifier="SE9410201530093459">
+                        <Creator xml:lang="en-GB"/>
+                    </IdReference>
+                    <IdReference domain="swiftID" identifier="NDEASESS"/>
+                    <IdReference domain="vatID" identifier="SE000000000001"/>
+                </InvoicePartner>
+                <InvoicePartner>
+                    <Contact role="soldTo">
+                        <Name xml:lang="en-GB">Company test</Name>
+                        <PostalAddress>
+                            <DeliverTo>Reference 123456</DeliverTo>
+                            <DeliverTo>CS00545</DeliverTo>
+                            <DeliverTo>Jane Doe</DeliverTo>
+                            <Street>Street test 1</Street>
+                            <City>Test city</City>
+                            <PostalCode>111 11</PostalCode>
+                            <Country isoCountryCode="DE">DE</Country>
+                        </PostalAddress>
+                        <Email>test@test.pagero.com</Email>
+                    </Contact>
+                </InvoicePartner>
+                <InvoicePartner>
+                    <Contact role="billTo">
+                        <Name xml:lang="en-GB">Company test</Name>
+                        <PostalAddress>
+                            <DeliverTo>Jane Doe</DeliverTo>
+                            <Street>Street test 1</Street>
+                            <City>Test city</City>
+                            <PostalCode>111 11</PostalCode>
+                            <Country isoCountryCode="DE">DE</Country>
+                        </PostalAddress>
+                        <Email>test@test.pagero.com</Email>
+                    </Contact>
+                </InvoicePartner>
+                <InvoicePartner>
+                    <Contact role="remitTo">
+                        <Name xml:lang="en-GB">Pagero Support</Name>
+                        <PostalAddress>
+                            <Street>Pagero AB i Göteborg</Street>
+                            <City>Göteborg</City>
+                            <PostalCode>10000</PostalCode>
+                            <Country isoCountryCode="SE">SE</Country>
+                        </PostalAddress>
+                        <Email>citest@test.pagero.com</Email>
+                    </Contact>
+                    <IdReference domain="accountID" identifier="1234-1234">
+                        <Creator xml:lang="en-GB"/>
+                    </IdReference>
+                    <IdReference domain="swiftID" identifier="BGABSESS"/>
+                    <IdReference domain="accountID" identifier="123456789101234">
+                        <Creator xml:lang="en-GB"/>
+                    </IdReference>
+                    <IdReference domain="swiftID" identifier="NDEASESS"/>
+                    <IdReference domain="bankBranchID" identifier="5555"/>
+                    <IdReference domain="bankNationalID" identifier="6598"/>
+                    <IdReference domain="ibanID" identifier="SE9410201530093459">
+                        <Creator xml:lang="en-GB"/>
+                    </IdReference>
+                    <IdReference domain="swiftID" identifier="NDEASESS"/>
+                    <IdReference domain="vatID" identifier="SE000000000001"/>
+                    <IdReference domain="supplierTaxID" identifier="SE000000000001"/>
+                </InvoicePartner>
+                <InvoiceDetailShipping shippingDate="2021-09-01">
+                    <Contact role="shipTo">
+                        <Name xml:lang="en-GB">Company test</Name>
+                        <PostalAddress>
+                            <Street>Street test 1</Street>
+                            <City>Test city</City>
+                            <PostalCode>111 11</PostalCode>
+                            <Country isoCountryCode="DE">DE</Country>
+                        </PostalAddress>
+                        <Email>test@test.pagero.com</Email>
+                    </Contact>
+                    <Contact role="shipFrom">
+                        <Name xml:lang="en-GB">Pagero Support</Name>
+                        <PostalAddress>
+                            <DeliverTo>Support</DeliverTo>
+                            <Street>Pagero AB i Göteborg</Street>
+                            <City>Göteborg</City>
+                            <PostalCode>10000</PostalCode>
+                            <Country isoCountryCode="SE">SE</Country>
+                        </PostalAddress>
+                        <Email>citest@test.pagero.com</Email>
+                    </Contact>
+                </InvoiceDetailShipping>
+                <PaymentTerm payInNumberOfDays="30"/>
+                <Extrinsic name="Invoice description 1">This is a message to the receiver</Extrinsic>
+                <Extrinsic name="Delivery Method">AIR</Extrinsic>
+                <Extrinsic name="Delivery terms">Incoterms 2021</Extrinsic>
+                <Extrinsic name="Over due fine">2</Extrinsic>
+                <Extrinsic name="supplierVatID">SE000000000001</Extrinsic>
+                <Extrinsic name="paymentReference">13486768189412</Extrinsic>
+                <Extrinsic name="invoiceSubmissionMethod">cXML</Extrinsic>
+            </InvoiceDetailRequestHeader>
+            <InvoiceDetailOrder>
+                <InvoiceDetailOrderInfo>
+                    <MasterAgreementIDInfo agreementDate="2021-07-22T00:00:00+02:00" agreementID="AGID9876654"/>
+                    <OrderIDInfo orderDate="2021-08-10T00:00:00+02:00" orderID="PO12345678"/>
+                    <SupplierOrderInfo orderID="SO1646130"/>
+                </InvoiceDetailOrderInfo>
+                <InvoiceDetailItem invoiceLineNumber="1" quantity="5">
+                    <UnitOfMeasure>EA</UnitOfMeasure>
+                    <UnitPrice>
+                        <Money currency="EUR">100</Money>
+                    </UnitPrice>
+                    <InvoiceDetailItemReference lineNumber="1">
+                        <ItemID>
+                            <SupplierPartID>WWA5588</SupplierPartID>
+                            <BuyerPartID>BA999978</BuyerPartID>
+                        </ItemID>
+                        <Description xml:lang="en-GB">Plate 001</Description>
+                    </InvoiceDetailItemReference>
+                    <SubtotalAmount>
+                        <Money currency="EUR">450.00</Money>
+                    </SubtotalAmount>
+                    <Tax>
+                        <Money currency="EUR">90.00</Money>
+                        <Description xml:lang="en-GB">VAT</Description>
+                        <TaxDetail category="vat" percentageRate="20.00" purpose="tax" taxPointDate="2021-09-02T00:00:00+02:00">
+                            <TaxAmount>
+                                <Money currency="EUR">90.00</Money>
+                            </TaxAmount>
+                            <Description xml:lang="en-GB">VAT</Description>
+                        </TaxDetail>
+                    </Tax>
+                    <GrossAmount>
+                        <Money currency="EUR">540.00</Money>
+                    </GrossAmount>
+                    <NetAmount>
+                        <Money currency="EUR">440</Money>
+                    </NetAmount>
+                    <Comments>Product description 1
+                        Delivery Date:2021-08-25
+                        Notenumber:10001337779
+                    </Comments>
+                </InvoiceDetailItem>
+                <InvoiceDetailItem invoiceLineNumber="2" quantity="12">
+                    <UnitOfMeasure>XBX</UnitOfMeasure>
+                    <UnitPrice>
+                        <Money currency="EUR">40</Money>
+                    </UnitPrice>
+                    <InvoiceDetailItemReference lineNumber="2">
+                        <ItemID>
+                            <SupplierPartID>WWA1122</SupplierPartID>
+                            <BuyerPartID>BA999979</BuyerPartID>
+                        </ItemID>
+                        <Description xml:lang="en-GB">Plate 079</Description>
+                    </InvoiceDetailItemReference>
+                    <SubtotalAmount>
+                        <Money currency="EUR">482.00</Money>
+                    </SubtotalAmount>
+                    <Tax>
+                        <Money currency="EUR">0.00</Money>
+                        <Description xml:lang="en-GB">VAT</Description>
+                        <TaxDetail category="vat" exemptDetail="exempt" percentageRate=".00" purpose="tax" taxPointDate="2021-09-02T00:00:00+02:00">
+                            <TaxAmount>
+                                <Money currency="EUR">0.00</Money>
+                            </TaxAmount>
+                            <Description xml:lang="en-GB">Not subject for tax</Description>
+                        </TaxDetail>
+                    </Tax>
+                    <GrossAmount>
+                        <Money currency="EUR">482.00</Money>
+                    </GrossAmount>
+                    <NetAmount>
+                        <Money currency="EUR">434</Money>
+                    </NetAmount>
+                    <Comments>Product description 2
+                        Delivery Date:2021-09-01
+                        Notenumber:10001337779
+                    </Comments>
+                </InvoiceDetailItem>
+            </InvoiceDetailOrder>
+            <InvoiceDetailSummary>
+                <SubtotalAmount>
+                    <Money currency="EUR">932.00</Money>
+                </SubtotalAmount>
+                <Tax>
+                    <Money currency="EUR">80.00</Money>
+                    <Description xml:lang="en-GB">VAT</Description>
+                    <TaxDetail category="vat" percentageRate="20.00" purpose="tax" taxPointDate="2021-09-02T00:00:00+02:00">
+                        <TaxableAmount>
+                            <Money currency="EUR">350.00</Money>
+                        </TaxableAmount>
+                        <TaxAmount>
+                            <Money currency="EUR">70.00</Money>
+                        </TaxAmount>
+                        <Description xml:lang="en-GB">VAT</Description>
+                    </TaxDetail>
+                    <TaxDetail category="vat" percentageRate="10.00" purpose="tax" taxPointDate="2021-09-02T00:00:00+02:00">
+                        <TaxableAmount>
+                            <Money currency="EUR">100.00</Money>
+                        </TaxableAmount>
+                        <TaxAmount>
+                            <Money currency="EUR">10.00</Money>
+                        </TaxAmount>
+                        <Description xml:lang="en-GB">VAT</Description>
+                    </TaxDetail>
+                    <TaxDetail category="vat" exemptDetail="exempt" percentageRate=".00" purpose="tax" taxPointDate="2021-09-02T00:00:00+02:00">
+                        <TaxableAmount>
+                            <Money currency="EUR">482.00</Money>
+                        </TaxableAmount>
+                        <TaxAmount>
+                            <Money currency="EUR">0.00</Money>
+                        </TaxAmount>
+                        <Description xml:lang="en-GB">Not subject for tax</Description>
+                    </TaxDetail>
+                </Tax>
+                <SpecialHandlingAmount>
+                    <Money currency="EUR">100.00</Money>
+                    <Description xml:lang="en-GB">Sum of all charges except freight plus rounding amount</Description>
+                </SpecialHandlingAmount>
+                <GrossAmount>
+                    <Money currency="EUR">1112.00</Money>
+                </GrossAmount>
+                <InvoiceDetailDiscount>
+                    <Money currency="EUR">100.00</Money>
+                </InvoiceDetailDiscount>
+                <NetAmount>
+                    <Money currency="EUR">1012.00</Money>
+                </NetAmount>
+                <DueAmount>
+                    <Money currency="EUR">1003.00</Money>
+                </DueAmount>
+            </InvoiceDetailSummary>
+        </InvoiceDetailRequest>
+    </Request>
+</cXML>
