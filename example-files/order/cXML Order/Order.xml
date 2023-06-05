@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.049/cXML.dtd">
+<cXML xml:lang="en-GB" payloadID="123456789" timestamp="10:10:10">
+    <Header>
+        <From>
+            <Credential domain="LegalEntityID">
+                <Identity>123456-0000</Identity>
+            </Credential>
+            <Credential domain="TaxID">
+                <Identity>DE0000000001</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>32323232320123</Identity>
+            </Credential>
+        </From>
+        <To>
+            <Credential domain="LegalEntityID">
+                <Identity>8808808-0000</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>8808808000121</Identity>
+            </Credential>
+        </To>
+        <Sender>
+            <Credential domain="LegalEntityID">
+                <Identity>123456-0000</Identity>
+            </Credential>
+            <UserAgent>Pagero Online</UserAgent>
+        </Sender>
+    </Header>
+    <Request deploymentMode="test">
+        <OrderRequest>
+            <OrderRequestHeader orderID="PO123456789" orderDate="2023-03-03" type="new" orderType="regular">
+                <Total>
+                    <Money currency="EUR"/>
+                </Total>
+                <ShipTo>
+                    <Address isoCountryCode="DE">
+                        <Name xml:lang="en-GB">Test name 3</Name>
+                        <PostalAddress>
+                            <DeliverTo>Support</DeliverTo>
+                            <Street>Street test 2</Street>
+                            <City>Test city</City>
+                            <State>AA</State>
+                            <PostalCode>222 22</PostalCode>
+                            <Country isoCountryCode="DE">DE</Country>
+                        </PostalAddress>
+                    </Address>
+                    <IdReference identifier="2323232320123" domain="GS1"/>
+                </ShipTo>
+                <BillTo>
+                    <Address isoCountryCode="DE">
+                        <Name xml:lang="en-GB">Test company</Name>
+                        <PostalAddress>
+                            <DeliverTo>Jane Doe</DeliverTo>
+                            <Street>Street test 1</Street>
+                            <City>Test city</City>
+                            <PostalCode>111 11</PostalCode>
+                            <Country isoCountryCode="DE">DE</Country>
+                        </PostalAddress>
+                        <Email>test@test.pagero.com</Email>
+                        <Phone>
+                            <TelephoneNumber>
+                                <CountryCode isoCountryCode="DE">-</CountryCode>
+                                <AreaOrCityCode>-</AreaOrCityCode>
+                                <Number>123 121212</Number>
+                            </TelephoneNumber>
+                        </Phone>
+                    </Address>
+                    <IdReference identifier="8808808000121" domain="GS1"/>
+                </BillTo>
+                <Contact role="buyer">
+                    <Name xml:lang="en-GB">Test company</Name>
+                    <PostalAddress>
+                        <DeliverTo>Jane Doe</DeliverTo>
+                        <Street>Street test 1</Street>
+                        <City>Test city</City>
+                        <PostalCode>111 11</PostalCode>
+                        <Country isoCountryCode="DE">DE</Country>
+                    </PostalAddress>
+                    <Email>test@test.pagero.com</Email>
+                    <Phone>
+                        <TelephoneNumber>
+                            <CountryCode isoCountryCode="DE">-</CountryCode>
+                            <AreaOrCityCode>-</AreaOrCityCode>
+                            <Number>123 121212</Number>
+                        </TelephoneNumber>
+                    </Phone>
+                    <IdReference identifier="8808808000121" domain="GS1"/>
+                </Contact>
+                <Contact role="supplierCorporate">
+                    <Name xml:lang="en-GB">Pagero Support</Name>
+                    <PostalAddress>
+                        <DeliverTo>John Doe</DeliverTo>
+                        <DeliverTo>Support</DeliverTo>
+                        <Street>Street test 2</Street>
+                        <City>Test city</City>
+                        <State>AA</State>
+                        <PostalCode>222 22</PostalCode>
+                        <Country isoCountryCode="DE">DE</Country>
+                    </PostalAddress>
+                    <Email>test1@test.pagero.com</Email>
+                    <Phone>
+                        <TelephoneNumber>
+                            <CountryCode isoCountryCode="DE">-</CountryCode>
+                            <AreaOrCityCode>-</AreaOrCityCode>
+                            <Number>222 121212</Number>
+                        </TelephoneNumber>
+                    </Phone>
+                    <URL>www.pagero.com</URL>
+                    <IdReference identifier="DE0000000001" domain="vatID"/>
+                </Contact>
+                <Comments>
+                    <Attachment>
+                        <URL>cid:179295553</URL>
+                    </Attachment>
+                </Comments>
+                <Comments>This is a free text on document level 1</Comments>
+                <Comments>This is a free text on document level 2</Comments>
+            </OrderRequestHeader>
+            <ItemOut quantity="2" lineNumber="1">
+                <ItemID>
+                    <SupplierPartID>234567</SupplierPartID>
+                    <BuyerPartID>12345</BuyerPartID>
+                </ItemID>
+                <ItemDetail>
+                    <UnitPrice>
+                        <Money currency="EUR">100.00</Money>
+                    </UnitPrice>
+                    <Description xml:lang="en-GB">Test product</Description>
+                    <UnitOfMeasure>EA</UnitOfMeasure>
+                    <Classification domain="HS">98-99</Classification>
+                    <Extrinsic name="Line text">This is a free text on line level</Extrinsic>
+                </ItemDetail>
+            </ItemOut>
+            <ItemOut quantity="1" lineNumber="2" requestedDeliveryDate="2023-06-06">
+                <ItemID>
+                    <SupplierPartID>989898</SupplierPartID>
+                    <BuyerPartID>656565</BuyerPartID>
+                </ItemID>
+                <ItemDetail>
+                    <UnitPrice>
+                        <Money currency="EUR">100.00</Money>
+                    </UnitPrice>
+                    <Description xml:lang="en-GB">Test product</Description>
+                    <UnitOfMeasure>EA</UnitOfMeasure>
+                    <Classification domain="HS">77-99</Classification>
+                    <Extrinsic name="Line text">This is a free text on line level</Extrinsic>
+                </ItemDetail>
+            </ItemOut>
+        </OrderRequest>
+    </Request>
+</cXML>

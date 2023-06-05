@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+    <cbc:CustomizationID>OIOUBL-2.02</cbc:CustomizationID>
+    <cbc:ProfileID schemeAgencyID="320" schemeID="urn:oioubl:id:profileid-1.2">Procurement-OrdSimR-BilSim-1.0</cbc:ProfileID>
+    <cbc:ID>PO123456789</cbc:ID>
+    <cbc:IssueDate>2023-03-03</cbc:IssueDate>
+    <cbc:Note>This is a free text on document level 1</cbc:Note>
+    <cbc:DocumentCurrencyCode>EUR</cbc:DocumentCurrencyCode>
+    <cac:ValidityPeriod>
+        <cbc:StartDate>2023-03-03</cbc:StartDate>
+        <cbc:EndDate>2023-03-30</cbc:EndDate>
+    </cac:ValidityPeriod>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>179295553</cbc:ID>
+        <cbc:DocumentType>Related document</cbc:DocumentType>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject mimeCode="text/csv" filename="789112023_179295553.csv">VGhpcyxpcyxhIHRlc3QsdmFsdWUs</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="GLN">8808808000121</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeAgencyID="9" schemeID="GLN">8808808000121</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test company</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street test 1</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>11111</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Test company</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="DK:CVR">DK88088080</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>1234567890</cbc:ID>
+                <cbc:Name>Jane Doe</cbc:Name>
+                <cbc:Telephone>123 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="DK:CVR">DK12345678</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="DK:CVR">DK12345678</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Pagero Support</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:Department>Support</cbc:Department>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>22222</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID schemeID="DK:SE">DK12345678</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                    <cbc:Name>Moms</cbc:Name>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Pagero Support</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="DK:CVR">DK12345678</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:ID>Department 3</cbc:ID>
+                <cbc:Name>John Doe</cbc:Name>
+                <cbc:Telephone>222 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:Delivery>
+        <cac:DeliveryLocation>
+            <cac:Address>
+                <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:Department>Support</cbc:Department>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>222 22</cbc:PostalZone>
+                <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:DeliveryParty>
+            <cac:PartyIdentification>
+                <cbc:ID schemeAgencyID="9" schemeID="GLN">2323232320123</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test name 3</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:Department>Support</cbc:Department>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>222 22</cbc:PostalZone>
+                <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>DE</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+    <cac:OrderLine>
+        <cbc:Note>This is a free text on line level</cbc:Note>
+        <cac:LineItem>
+            <cbc:ID>1</cbc:ID>
+            <cbc:Quantity unitCode="EA">2.00</cbc:Quantity>
+            <cbc:LineExtensionAmount currencyID="EUR">200.00</cbc:LineExtensionAmount>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">100.00</cbc:PriceAmount>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Name>Test product</cbc:Name>
+                <cac:BuyersItemIdentification>
+                    <cbc:ID>12345</cbc:ID>
+                </cac:BuyersItemIdentification>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>234567</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Serial Number</cbc:Name>
+                    <cbc:Value>SN123456</cbc:Value>
+                </cac:AdditionalItemProperty>
+            </cac:Item>
+        </cac:LineItem>
+    </cac:OrderLine>
+    <cac:OrderLine>
+        <cbc:Note>This is a free text on line level</cbc:Note>
+        <cac:LineItem>
+            <cbc:ID>2</cbc:ID>
+            <cbc:Quantity unitCode="EA">1.00</cbc:Quantity>
+            <cbc:LineExtensionAmount currencyID="EUR">100.00</cbc:LineExtensionAmount>
+            <cac:Delivery>
+                <cac:RequestedDeliveryPeriod>
+                    <cbc:StartDate>2023-06-06</cbc:StartDate>
+                    <cbc:EndDate>2023-06-06</cbc:EndDate>
+                </cac:RequestedDeliveryPeriod>
+            </cac:Delivery>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="EUR">100.00</cbc:PriceAmount>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Name>Test product</cbc:Name>
+                <cac:BuyersItemIdentification>
+                    <cbc:ID>656565</cbc:ID>
+                </cac:BuyersItemIdentification>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>989898</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Serial Number</cbc:Name>
+                    <cbc:Value>SN6666666</cbc:Value>
+                </cac:AdditionalItemProperty>
+            </cac:Item>
+        </cac:LineItem>
+    </cac:OrderLine>
+</Order>
