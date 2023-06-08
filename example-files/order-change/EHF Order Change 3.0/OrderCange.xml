@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderChange xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderChange-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:anskaffelser.no:2019:ehf:spec:adv-order-change:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:09:1.0</cbc:ProfileID>
+    <cbc:ID>45656565656</cbc:ID>
+    <cbc:IssueDate>2023-05-05</cbc:IssueDate>
+    <cbc:IssueTime>14:29:32</cbc:IssueTime>
+    <cbc:SequenceNumberID>1</cbc:SequenceNumberID>
+    <cbc:Note>This is a free text on document level 1 This is a free text on document level 2</cbc:Note>
+    <cbc:DocumentCurrencyCode>NOK</cbc:DocumentCurrencyCode>
+    <cac:ValidityPeriod>
+        <cbc:EndDate>2023-06-05</cbc:EndDate>
+    </cac:ValidityPeriod>
+    <cac:OrderReference>
+        <cbc:ID>PO12121212</cbc:ID>
+    </cac:OrderReference>
+    <cac:OriginatorDocumentReference>
+        <cbc:ID>123456789</cbc:ID>
+    </cac:OriginatorDocumentReference>
+    <cac:AdditionalDocumentReference>
+        <cbc:ID>179295553</cbc:ID>
+        <cbc:DocumentType>Related document</cbc:DocumentType>
+        <cac:Attachment>
+            <cbc:EmbeddedDocumentBinaryObject filename="789112023_179295553.png" mimeCode="image/png">VGhpcyxpcyxhIHRlc3QsdmFsdWUs</cbc:EmbeddedDocumentBinaryObject>
+        </cac:Attachment>
+    </cac:AdditionalDocumentReference>
+    <cac:Contract>
+        <cbc:ID>56897898989</cbc:ID>
+    </cac:Contract>
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">000001007</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0192">000001007</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test company</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street test 1</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>111 11</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NO000000002MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Test company</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="0192">000001007</cbc:CompanyID>
+                <cac:RegistrationAddress>
+                    <cac:Country>
+                        <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Name>Jane Doe</cbc:Name>
+                <cbc:Telephone>123 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">000001007</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0192">000001007</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Pagero Support</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>222 22</cbc:PostalZone>
+                <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Pagero Support</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="0192">000001007</cbc:CompanyID>
+                <cac:RegistrationAddress>
+                    <cac:Country>
+                        <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                    </cac:Country>
+                </cac:RegistrationAddress>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Name>John Doe</cbc:Name>
+                <cbc:Telephone>222 121212</cbc:Telephone>
+                <cbc:ElectronicMail>test1@test.pagero.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:Delivery>
+        <cac:DeliveryLocation>
+            <cac:Address>
+                <cbc:StreetName>Street test 2</cbc:StreetName>
+                <cbc:CityName>Test city</cbc:CityName>
+                <cbc:PostalZone>222 22</cbc:PostalZone>
+                <cbc:CountrySubentity>AA</cbc:CountrySubentity>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:Address>
+        </cac:DeliveryLocation>
+        <cac:RequestedDeliveryPeriod>
+            <cbc:StartDate>2023-06-06</cbc:StartDate>
+        </cac:RequestedDeliveryPeriod>
+        <cac:DeliveryParty>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">000001007</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Test name 3</cbc:Name>
+            </cac:PartyName>
+        </cac:DeliveryParty>
+    </cac:Delivery>
+    <cac:OrderLine>
+        <cac:LineItem>
+            <cbc:ID>1</cbc:ID>
+            <cbc:LineStatusCode>3</cbc:LineStatusCode>
+            <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+            <cbc:LineExtensionAmount currencyID="NOK">100.00</cbc:LineExtensionAmount>
+            <cac:Delivery>
+                <cac:RequestedDeliveryPeriod>
+                    <cbc:StartDate>2023-06-06</cbc:StartDate>
+                </cac:RequestedDeliveryPeriod>
+            </cac:Delivery>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="NOK">100.00</cbc:PriceAmount>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Name>Test product</cbc:Name>
+                <cac:BuyersItemIdentification>
+                    <cbc:ID>12345</cbc:ID>
+                </cac:BuyersItemIdentification>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>234567</cbc:ID>
+                </cac:SellersItemIdentification>
+                <cac:CommodityClassification>
+                    <cbc:ItemClassificationCode listID="HS">98-99</cbc:ItemClassificationCode>
+                </cac:CommodityClassification>
+                <cac:AdditionalItemProperty>
+                    <cbc:Name>Serial Number</cbc:Name>
+                    <cbc:Value>SN123456</cbc:Value>
+                </cac:AdditionalItemProperty>
+            </cac:Item>
+        </cac:LineItem>
+    </cac:OrderLine>
+</OrderChange>
