@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2">
+    <cbc:CustomizationID>urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0#conformant#urn:fdc:anskaffelser.no:2019:ehf:reminder:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:06:1.0</cbc:ProfileID>
+    <cbc:ID>R1234567</cbc:ID>
+    <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+    <cbc:DueDate>2023-08-04</cbc:DueDate>
+    <cbc:Note>Vi reserverar oss för inbetalningar gjorda efter betalningspåminnelsens utskriftsdatum. Enligt våra noteringar är ovanstående fakturor obetalda. Vänligen betala omgående.</cbc:Note>
+    <cbc:DocumentCurrencyCode>SEK</cbc:DocumentCurrencyCode>
+    <cbc:BuyerReference>BR123456</cbc:BuyerReference>
+    <cac:BillingReference>
+        <cac:InvoiceDocumentReference>
+            <cbc:ID>65656565</cbc:ID>
+            <cbc:IssueDate>2023-06-12</cbc:IssueDate>
+        </cac:InvoiceDocumentReference>
+    </cac:BillingReference>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">123456789</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000003</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Seller name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street name 1</cbc:StreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID>NO123456789MVA</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Seller name</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="0192">123456789</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Telephone>001234567891</cbc:Telephone>
+                <cbc:ElectronicMail>email@test.com</cbc:ElectronicMail>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">234567891</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000004</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Buyer name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street name 1</cbc:StreetName>
+                <cbc:AdditionalStreetName>Street name 2</cbc:AdditionalStreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Buyer name</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="0192">234567891</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>00000000</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cbc:ID>ABCDRHFG</cbc:ID>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:PaymentMeans>
+        <cbc:PaymentMeansCode>30</cbc:PaymentMeansCode>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>NO0000000000000000000000</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cbc:ID>ABCDRHFG</cbc:ID>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="SEK">232.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="SEK">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID>Z</cbc:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="SEK">232.00</cbc:LineExtensionAmount>
+        <cbc:TaxExclusiveAmount currencyID="SEK">232.00</cbc:TaxExclusiveAmount>
+        <cbc:TaxInclusiveAmount currencyID="SEK">232.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="SEK">232.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:InvoiceLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:Note>Original amount: 172,00</cbc:Note>
+        <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="SEK">172.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Original invoice</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>Z</cbc:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">172.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+    <cac:InvoiceLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:InvoicedQuantity unitCode="ZZ">1</cbc:InvoicedQuantity>
+        <cbc:LineExtensionAmount currencyID="SEK">60.00</cbc:LineExtensionAmount>
+        <cac:Item>
+            <cbc:Name>Påminnelseavgift</cbc:Name>
+            <cac:ClassifiedTaxCategory>
+                <cbc:ID>Z</cbc:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID>VAT</cbc:ID>
+                </cac:TaxScheme>
+            </cac:ClassifiedTaxCategory>
+        </cac:Item>
+        <cac:Price>
+            <cbc:PriceAmount currencyID="SEK">60.00</cbc:PriceAmount>
+        </cac:Price>
+    </cac:InvoiceLine>
+</Invoice>

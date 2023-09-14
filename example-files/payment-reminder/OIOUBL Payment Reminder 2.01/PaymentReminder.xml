@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Reminder xmlns="urn:oasis:names:specification:ubl:schema:xsd:Reminder-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Reminder-2 UBL-Reminder-2.0.xsd">
+    <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+    <cbc:CustomizationID>OIOUBL-2.01</cbc:CustomizationID>
+    <cbc:ProfileID schemeAgencyID="320" schemeID="urn:oioubl:id:profileid-1.4">Procurement-OrdSimR-BilSim-1.0</cbc:ProfileID>
+    <cbc:ID>R1234567</cbc:ID>
+    <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+    <cbc:ReminderTypeCode listAgencyID="320" listID="urn:oioubl.codelist:remindertypecode-1.1">Reminder</cbc:ReminderTypeCode>
+    <cbc:ReminderSequenceNumeric>1</cbc:ReminderSequenceNumeric>
+    <cbc:DocumentCurrencyCode>DKK</cbc:DocumentCurrencyCode>
+    <cac:AccountingSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="GLN" schemeAgencyID="9">0000000000003</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="ZZZ">000000-0003</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Seller name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street name 1</cbc:StreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1">DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID schemeID="ZZZ">0000000000003</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                    <cbc:Name>Moms</cbc:Name>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:CompanyID schemeID="ZZZ">0000000000003</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Telephone>123456789</cbc:Telephone>
+                <cbc:ElectronicMail>email@test.com</cbc:ElectronicMail>
+                <cbc:Note>www.test.com</cbc:Note>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingSupplierParty>
+    <cac:AccountingCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="GLN" schemeAgencyID="9">0000000000002</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="ZZZ">000000-0002</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Buyer name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street name 1</cbc:StreetName>
+                <cbc:AdditionalStreetName>Street name 2</cbc:AdditionalStreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1">DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:CompanyID schemeID="ZZZ">0000000000002</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+            <cac:Contact>
+                <cbc:Telephone>123456789</cbc:Telephone>
+                <cbc:ElectronicMail>email@test.com</cbc:ElectronicMail>
+                <cbc:Note>www.test.com</cbc:Note>
+            </cac:Contact>
+        </cac:Party>
+    </cac:AccountingCustomerParty>
+    <cac:PaymentMeans>
+        <cbc:ID>1</cbc:ID>
+        <cbc:PaymentMeansCode>1</cbc:PaymentMeansCode>
+        <cbc:PaymentDueDate>2023-08-04</cbc:PaymentDueDate>
+        <cbc:PaymentChannelCode listAgencyID="320" listID="urn:oioubl:codelist:paymentchannelcode-1.1">IBAN</cbc:PaymentChannelCode>
+        <cac:PayeeFinancialAccount>
+            <cbc:ID>DK0000000000000000000000</cbc:ID>
+            <cac:FinancialInstitutionBranch>
+                <cac:FinancialInstitution>
+                    <cbc:ID>ABCDEFG</cbc:ID>
+                </cac:FinancialInstitution>
+            </cac:FinancialInstitutionBranch>
+        </cac:PayeeFinancialAccount>
+    </cac:PaymentMeans>
+    <cac:TaxTotal>
+        <cbc:TaxAmount currencyID="DKK">0.00</cbc:TaxAmount>
+        <cac:TaxSubtotal>
+            <cbc:TaxableAmount currencyID="DKK">232.00</cbc:TaxableAmount>
+            <cbc:TaxAmount currencyID="DKK">0.00</cbc:TaxAmount>
+            <cac:TaxCategory>
+                <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxcategoryid-1.1">ZeroRated</cbc:ID>
+                <cbc:Percent>0</cbc:Percent>
+                <cac:TaxScheme>
+                    <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                    <cbc:Name>Moms</cbc:Name>
+                </cac:TaxScheme>
+            </cac:TaxCategory>
+        </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:LegalMonetaryTotal>
+        <cbc:LineExtensionAmount currencyID="DKK">232.00</cbc:LineExtensionAmount>
+        <cbc:TaxInclusiveAmount currencyID="DKK">232.00</cbc:TaxInclusiveAmount>
+        <cbc:PayableAmount currencyID="DKK">232.00</cbc:PayableAmount>
+    </cac:LegalMonetaryTotal>
+    <cac:ReminderLine>
+        <cbc:ID>1</cbc:ID>
+        <cbc:DebitLineAmount currencyID="DKK">172.00</cbc:DebitLineAmount>
+        <cac:BillingReference>
+            <cac:InvoiceDocumentReference>
+                <cbc:ID>65656565</cbc:ID>
+                <cbc:IssueDate>2023-06-12</cbc:IssueDate>
+            </cac:InvoiceDocumentReference>
+        </cac:BillingReference>
+    </cac:ReminderLine>
+    <cac:ReminderLine>
+        <cbc:ID>2</cbc:ID>
+        <cbc:DebitLineAmount currencyID="DKK">60.00</cbc:DebitLineAmount>
+        <cac:BillingReference>
+            <cac:InvoiceDocumentReference>
+                <cbc:ID>65656565</cbc:ID>
+                <cbc:IssueDate>2023-06-12</cbc:IssueDate>
+            </cac:InvoiceDocumentReference>
+        </cac:BillingReference>
+    </cac:ReminderLine>
+</Reminder>

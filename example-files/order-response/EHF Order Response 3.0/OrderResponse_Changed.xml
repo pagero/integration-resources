@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:order_response:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:02:1.0</cbc:ProfileID>
+    <cbc:ID>65656565</cbc:ID>
+    <cbc:SalesOrderID>1212121212</cbc:SalesOrderID>
+    <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+    <cbc:OrderResponseCode>CA</cbc:OrderResponseCode>
+    <cbc:DocumentCurrencyCode>GBP</cbc:DocumentCurrencyCode>
+    <cac:OrderReference>
+        <cbc:ID>PO12345678</cbc:ID>
+    </cac:OrderReference>
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">123456789</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000003</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Seller name</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">234567890</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Buyer name</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:OrderLine>
+        <cac:LineItem>
+            <cbc:ID>1</cbc:ID>
+            <cbc:LineStatusCode>5</cbc:LineStatusCode>
+            <cbc:Quantity unitCode="EA">1</cbc:Quantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="GBP">79.35</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Name>Article 1</cbc:Name>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>A-123456</cbc:ID>
+                </cac:SellersItemIdentification>
+            </cac:Item>
+        </cac:LineItem>
+        <cac:OrderLineReference>
+            <cbc:LineID>1</cbc:LineID>
+        </cac:OrderLineReference>
+    </cac:OrderLine>
+    <cac:OrderLine>
+        <cac:LineItem>
+            <cbc:ID>2</cbc:ID>
+            <cbc:LineStatusCode>3</cbc:LineStatusCode>
+            <cbc:Quantity unitCode="EA">2</cbc:Quantity>
+            <cac:Price>
+                <cbc:PriceAmount currencyID="GBP">87.45</cbc:PriceAmount>
+                <cbc:BaseQuantity unitCode="EA">1</cbc:BaseQuantity>
+            </cac:Price>
+            <cac:Item>
+                <cbc:Name>Article 2</cbc:Name>
+                <cac:SellersItemIdentification>
+                    <cbc:ID>A-234567</cbc:ID>
+                </cac:SellersItemIdentification>
+            </cac:Item>
+        </cac:LineItem>
+        <cac:OrderLineReference>
+            <cbc:LineID>2</cbc:LineID>
+        </cac:OrderLineReference>
+    </cac:OrderLine>
+</OrderResponse>

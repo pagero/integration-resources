@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.049/Fulfill.dtd">
+<cXML payloadID="123456789" xml:lang="en-GB" timestamp="2023-08-25T06:47:36+01:00">
+    <Header>
+        <From>
+            <Credential domain="TaxID">
+                <Identity>DE000000002</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>0000000000002</Identity>
+            </Credential>
+        </From>
+        <To>
+            <Credential domain="TaxID">
+                <Identity>DE000000001</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>0000000000001</Identity>
+            </Credential>
+        </To>
+        <Sender>
+            <Credential domain="TaxID">
+                <Identity>DE000000002</Identity>
+            </Credential>
+            <UserAgent>Pagero Online</UserAgent>
+        </Sender>
+    </Header>
+    <Request deploymentMode="production">
+        <ShipNoticeRequest>
+            <ShipNoticeHeader shipmentID="1212121212" noticeDate="2023-08-22T06:47:36+01:00" shipmentDate="2023-08-22T06:47:36+01:00" deliveryDate="2023-08-23T06:47:36+01:00" shipmentType="planned">
+                <Contact role="shipFrom">
+                    <Name xml:lang="en-GB">Seller name</Name>
+                    <PostalAddress>
+                        <Street>Street name</Street>
+                        <City>Town</City>
+                        <PostalCode>12345</PostalCode>
+                        <Country isoCountryCode="DE">DE</Country>
+                    </PostalAddress>
+                    <IdReference identifier="DE000000002" domain="vatID"/>
+                    <IdReference identifier="0000000000002" domain="GS1"/>
+                </Contact>
+                <TermsOfDelivery>
+                    <TermsOfDeliveryCode value="CIF"/>
+                    <ShippingPaymentMethod value="'AdvanceCollect'"/>
+                    <Address isoCountryCode="DE">
+                        <Name xml:lang="en-GB">Delivery name</Name>
+                        <PostalAddress>
+                            <Street>Street name</Street>
+                            <City>Town</City>
+                            <PostalCode>12345</PostalCode>
+                            <Country isoCountryCode="DE">DE</Country>
+                        </PostalAddress>
+                    </Address>
+                </TermsOfDelivery>
+            </ShipNoticeHeader>
+            <ShipControl>
+                <CarrierIdentifier domain="companyName">123</CarrierIdentifier>
+                <ShipmentIdentifier>123456789</ShipmentIdentifier>
+            </ShipControl>
+            <ShipNoticePortion>
+                <OrderReference orderID="0000000002">
+                    <DocumentReference payloadID=""/>
+                </OrderReference>
+                <ShipNoticeItem lineNumber="1" quantity="1.000" shipNoticeLineNumber="000010">
+                    <ItemID>
+                        <SupplierPartID>H00000000001</SupplierPartID>
+                    </ItemID>
+                    <ShipNoticeItemDetail>
+                        <Description xml:lang="en-GB">Article name</Description>
+                        <UnitOfMeasure>BX</UnitOfMeasure>
+                        <Extrinsic name="Text">Packing Id:10382919</Extrinsic>
+                        <Extrinsic name="Text">Type of Package:CT, Package qty:00001</Extrinsic>
+                        <Extrinsic name="Text">Detail package qty: 1</Extrinsic>
+                        <Extrinsic name="Text">Total gross weight: 0.425KG</Extrinsic>
+                    </ShipNoticeItemDetail>
+                    <UnitOfMeasure>BX</UnitOfMeasure>
+                    <Batch>
+                        <SupplierBatchID>13131313</SupplierBatchID>
+                    </Batch>
+                </ShipNoticeItem>
+            </ShipNoticePortion>
+        </ShipNoticeRequest>
+    </Request>
+</cXML>

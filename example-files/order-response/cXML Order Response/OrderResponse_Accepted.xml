@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.2.049/Fulfill.dtd">
+<cXML version="1.2.049" payloadID="123456789" timestamp="2023-07-25T13:03:44+01:00">
+    <Header>
+        <From>
+            <Credential domain="NetworkID">
+                <Identity>0000000000004</Identity>
+            </Credential>
+            <Credential domain="BusinessPartnerId">
+                <Identity>
+                    <IdReference domain="iso6523" identifier="0000:0000000000004"/>
+                </Identity>
+            </Credential>
+            <Credential domain="TaxID">
+                <Identity>00000000004</Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>0000000000004</Identity>
+            </Credential>
+        </From>
+        <To>
+            <Credential domain="NetworkID">
+                <Identity>0000000000002</Identity>
+            </Credential>
+            <Credential domain="BusinessPartnerId">
+                <Identity>
+                    <IdReference domain="iso6523" identifier="0000:0000000000002"/>
+                </Identity>
+            </Credential>
+            <Credential domain="GLN">
+                <Identity>0000000000002</Identity>
+            </Credential>
+        </To>
+        <Sender>
+            <Credential domain="NetworkID">
+                <Identity>0000000000004</Identity>
+            </Credential>
+            <UserAgent>Pagero Online</UserAgent>
+        </Sender>
+    </Header>
+    <Request deploymentMode="production">
+        <ConfirmationRequest>
+            <ConfirmationHeader type="accept" noticeDate="2023-07-25T13:03:44+01:00" confirmID="65656565" operation="new">
+                <Contact role="shipFrom">
+                    <Name xml:lang="en-GB">Sender name</Name>
+                    <PostalAddress>
+                        <Street>Street name 2</Street>
+                        <City>Towm</City>
+                        <PostalCode>23456</PostalCode>
+                        <Country isoCountryCode="GB"/>
+                    </PostalAddress>
+                </Contact>
+            </ConfirmationHeader>
+            <OrderReference orderID="PO12345678">
+                <DocumentReference payloadID=""/>
+            </OrderReference>
+            <ConfirmationItem lineNumber="1" quantity="1">
+                <UnitOfMeasure>EA</UnitOfMeasure>
+                <ConfirmationStatus quantity="1" type="accept">
+                    <UnitOfMeasure>EA</UnitOfMeasure>
+                </ConfirmationStatus>
+            </ConfirmationItem>
+            <ConfirmationItem lineNumber="2" quantity="2">
+                <UnitOfMeasure>EA</UnitOfMeasure>
+                <ConfirmationStatus quantity="2" type="accept">
+                    <UnitOfMeasure>EA</UnitOfMeasure>
+                </ConfirmationStatus>
+            </ConfirmationItem>
+        </ConfirmationRequest>
+    </Request>
+</cXML>
