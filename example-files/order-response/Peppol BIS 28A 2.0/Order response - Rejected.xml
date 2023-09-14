@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponse-2"
+               xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2"
+               xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+   <cbc:UBLVersionID>2.1</cbc:UBLVersionID>
+   <cbc:CustomizationID>urn:www.cenbii.eu:transaction:biitrns076:ver2.0:extended:urn:www.peppol.eu:bis:peppol28a:ver1.0</cbc:CustomizationID>
+   <cbc:ProfileID>urn:www.cenbii.eu:profile:bii28:ver2.0</cbc:ProfileID>
+   <cbc:ID>65656565</cbc:ID>
+   <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+   <cbc:OrderResponseCode listID="UNCL1225">27</cbc:OrderResponseCode>
+   <cbc:DocumentCurrencyCode listID="ISO4217">GBP</cbc:DocumentCurrencyCode>
+   <cac:OrderReference>
+      <cbc:ID>PO12345678</cbc:ID>
+   </cac:OrderReference>
+   <cac:SellerSupplierParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="ZZZ">0000000000003</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="GLN">0000000000003</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Seller name</cbc:Name>
+         </cac:PartyName>
+      </cac:Party>
+   </cac:SellerSupplierParty>
+   <cac:BuyerCustomerParty>
+      <cac:Party>
+         <cbc:EndpointID schemeID="ZZZ">0000000000001</cbc:EndpointID>
+         <cac:PartyIdentification>
+            <cbc:ID schemeID="GLN">0000000000001</cbc:ID>
+         </cac:PartyIdentification>
+         <cac:PartyName>
+            <cbc:Name>Buyer name</cbc:Name>
+         </cac:PartyName>
+      </cac:Party>
+   </cac:BuyerCustomerParty>
+</OrderResponse>

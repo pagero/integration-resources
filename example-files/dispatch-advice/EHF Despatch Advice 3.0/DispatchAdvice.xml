@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DespatchAdvice xmlns="urn:oasis:names:specification:ubl:schema:xsd:DespatchAdvice-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:despatch_advice:3:extended:urn:fdc:anskaffelser.no:2019:ehf:spec:3.0</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:anskaffelser.no:2019:ehf:postaward:g3:05:1.0</cbc:ProfileID>
+    <cbc:ID>1212121212</cbc:ID>
+    <cbc:IssueDate>2023-08-22</cbc:IssueDate>
+    <cbc:IssueTime>06:47:36</cbc:IssueTime>
+    <cbc:Note>Transport document number: 123456789</cbc:Note>
+    <cac:OrderReference>
+        <cbc:ID>0000000002</cbc:ID>
+    </cac:OrderReference>
+    <cac:DespatchSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">123456789</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000002</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street name</cbc:StreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Seller name</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:DespatchSupplierParty>
+    <cac:DeliveryCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="0192">234567890</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000003</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street name</cbc:StreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Delivery name</cbc:RegistrationName>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:DeliveryCustomerParty>
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Buyer name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street name</cbc:StreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cac:PartyIdentification>
+                <cbc:ID schemeID="0088">0000000000002</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Seller name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:StreetName>Street name</cbc:StreetName>
+                <cbc:CityName>Town</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode>NO</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:Shipment>
+        <cbc:ID>NA</cbc:ID>
+        <cac:Delivery>
+            <cac:EstimatedDeliveryPeriod>
+                <cbc:StartDate>2023-08-23</cbc:StartDate>
+                <cbc:EndDate>2023-08-23</cbc:EndDate>
+            </cac:EstimatedDeliveryPeriod>
+            <cac:Despatch>
+                <cbc:ActualDespatchDate>2023-08-22</cbc:ActualDespatchDate>
+            </cac:Despatch>
+        </cac:Delivery>
+    </cac:Shipment>
+    <cac:DespatchLine>
+        <cbc:ID>000010</cbc:ID>
+        <cbc:Note>Packing Id:10382919 Type of Package:CT, Package qty:00001 Detail package qty: 1 Total gross weight: 0.425KG</cbc:Note>
+        <cbc:DeliveredQuantity unitCode="ZZ">1.000</cbc:DeliveredQuantity>
+        <cac:OrderLineReference>
+            <cbc:LineID>1</cbc:LineID>
+            <cac:OrderReference>
+                <cbc:ID>0000000002</cbc:ID>
+            </cac:OrderReference>
+        </cac:OrderLineReference>
+        <cac:Item>
+            <cbc:Name>Article name</cbc:Name>
+            <cac:SellersItemIdentification>
+                <cbc:ID>H00000000001</cbc:ID>
+            </cac:SellersItemIdentification>
+            <cac:StandardItemIdentification>
+                <cbc:ID schemeID="0160">00000000000001</cbc:ID>
+            </cac:StandardItemIdentification>
+            <cac:ItemInstance>
+                <cac:LotIdentification>
+                    <cbc:LotNumberID>13131313</cbc:LotNumberID>
+                    <cbc:ExpiryDate>2025-07-31</cbc:ExpiryDate>
+                </cac:LotIdentification>
+            </cac:ItemInstance>
+        </cac:Item>
+    </cac:DespatchLine>
+</DespatchAdvice>

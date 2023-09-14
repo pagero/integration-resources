@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:CustomizationID>urn:fdc:peppol.eu:poacc:trns:invoice_response:3</cbc:CustomizationID>
+    <cbc:ProfileID>urn:fdc:peppol.eu:poacc:bis:invoice_response:3</cbc:ProfileID>
+    <cbc:ID>989989898</cbc:ID>
+    <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+    <cbc:IssueTime>13:06:36</cbc:IssueTime>
+    <cac:SenderParty>
+        <cbc:EndpointID schemeID="0007">0000000002</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID>00000002</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Sender name</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+            <cbc:ElectronicMail>email@test.com</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:SenderParty>
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="0007">0000000001</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="0007">0000000001</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyLegalEntity>
+            <cbc:RegistrationName>Receiver name</cbc:RegistrationName>
+        </cac:PartyLegalEntity>
+    </cac:ReceiverParty>
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ResponseCode>RE</cbc:ResponseCode>
+            <cac:Status>
+                <cbc:StatusReasonCode listID="OPStatusReason">OTH</cbc:StatusReasonCode>
+                <cbc:StatusReason>Delivery rejected</cbc:StatusReason>
+            </cac:Status>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>12121212</cbc:ID>
+            <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+            <cbc:DocumentTypeCode>380</cbc:DocumentTypeCode>
+        </cac:DocumentReference>
+    </cac:DocumentResponse>
+</ApplicationResponse>

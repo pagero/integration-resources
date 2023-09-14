@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApplicationResponse xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" xmlns:ubltr="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+    <cbc:CustomizationID>OIOUBL-2.02</cbc:CustomizationID>
+    <cbc:ProfileID schemeAgencyID="320" schemeID="urn:oioubl:id:profileid-1.2">Procurement-OrdSimR-BilSim-1.0</cbc:ProfileID>
+    <cbc:ID>989989898</cbc:ID>
+    <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+    <cac:SenderParty>
+        <cbc:EndpointID schemeID="DK:SE">00000002</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="DK:SE">DK00000002</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Sender name</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+            <cbc:CitySubdivisionName/>
+            <cbc:CityName/>
+        </cac:PostalAddress>
+        <cac:PartyTaxScheme>
+            <cbc:CompanyID schemeID="DK:SE">DK00000002</cbc:CompanyID>
+            <cac:TaxScheme>
+                <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                <cbc:Name>Moms</cbc:Name>
+            </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+        <cac:PartyLegalEntity>
+            <cbc:CompanyID schemeID="DK:CVR">DK00000002</cbc:CompanyID>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+            <cbc:ElectronicMail>senderEmail@test.com</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:SenderParty>
+    <cac:ReceiverParty>
+        <cbc:EndpointID schemeID="DK:SE">00000001</cbc:EndpointID>
+        <cac:PartyIdentification>
+            <cbc:ID schemeID="DK:SE">DK00000001</cbc:ID>
+        </cac:PartyIdentification>
+        <cac:PartyName>
+            <cbc:Name>Receiver name</cbc:Name>
+        </cac:PartyName>
+        <cac:PostalAddress>
+            <cbc:AddressFormatCode listAgencyID="320" listID="urn:oioubl:codelist:addressformatcode-1.1">StructuredLax</cbc:AddressFormatCode>
+            <cbc:StreetName>Street name 1</cbc:StreetName>
+            <cbc:CitySubdivisionName/>
+            <cbc:CityName>Town</cbc:CityName>
+            <cbc:PostalZone>12345</cbc:PostalZone>
+            <cac:Country>
+                <cbc:IdentificationCode>DK</cbc:IdentificationCode>
+            </cac:Country>
+        </cac:PostalAddress>
+        <cac:PartyTaxScheme>
+            <cbc:CompanyID schemeID="DK:SE">DK00000001</cbc:CompanyID>
+            <cac:TaxScheme>
+                <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                <cbc:Name>Moms</cbc:Name>
+            </cac:TaxScheme>
+        </cac:PartyTaxScheme>
+        <cac:PartyLegalEntity>
+            <cbc:CompanyID schemeID="DK:CVR">DK00000001</cbc:CompanyID>
+        </cac:PartyLegalEntity>
+        <cac:Contact>
+            <cbc:ElectronicMail>receiverEmail@test.com</cbc:ElectronicMail>
+        </cac:Contact>
+    </cac:ReceiverParty>
+    <cac:DocumentResponse>
+        <cac:Response>
+            <cbc:ReferenceID>1</cbc:ReferenceID>
+            <cbc:ResponseCode listAgencyID="320" listID="urn:oioubl:codelist:responsecode-1.1">BusinessAccept</cbc:ResponseCode>
+            <cbc:Description>Delivery successful</cbc:Description>
+        </cac:Response>
+        <cac:DocumentReference>
+            <cbc:ID>12121212</cbc:ID>
+            <cbc:CopyIndicator>false</cbc:CopyIndicator>
+            <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+            <cbc:DocumentTypeCode listAgencyID="320" listID="urn:oioubl:codelist:responsedocumenttypecode-1.1">ZZZ</cbc:DocumentTypeCode>
+        </cac:DocumentReference>
+    </cac:DocumentResponse>
+</ApplicationResponse>

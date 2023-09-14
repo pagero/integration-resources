@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrderResponseSimple xmlns="urn:oasis:names:specification:ubl:schema:xsd:OrderResponseSimple-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:oasis:names:specification:ubl:schema:xsd:CoreComponentParameters-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sdt="urn:oasis:names:specification:ubl:schema:xsd:SpecializedDatatypes-2" xmlns:udt="urn:un:unece:uncefact:data:specification:UnqualifiedDataTypesSchemaModule:2">
+    <cbc:UBLVersionID>2.0</cbc:UBLVersionID>
+    <cbc:CustomizationID>OIOUBL-2.01</cbc:CustomizationID>
+    <cbc:ProfileID schemeAgencyID="320" schemeID="urn:oioubl:id:profileid-1.4">Procurement-OrdSim-1.0</cbc:ProfileID>
+    <cbc:ID>65656565</cbc:ID>
+    <cbc:IssueDate>2023-07-25</cbc:IssueDate>
+    <cbc:AcceptedIndicator>false</cbc:AcceptedIndicator>
+    <cbc:RejectionNote>Acceptance indicator note</cbc:RejectionNote>
+    <cac:OrderReference>
+        <cbc:ID>PO12345678</cbc:ID>
+    </cac:OrderReference>
+    <cac:SellerSupplierParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="GLN">0000000000003</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeAgencyID="9" schemeID="GLN">0000000000003</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Seller name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listID="urn:oioubl:codelist:addressformatcode-1.1" listAgencyID="320">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street name 2</cbc:StreetName>
+                <cbc:CityName>Towm</cbc:CityName>
+                <cbc:PostalZone>23456</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1:Alpha2">DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+            <cac:PartyTaxScheme>
+                <cbc:CompanyID schemeID="DK:SE">DK00000003</cbc:CompanyID>
+                <cac:TaxScheme>
+                    <cbc:ID schemeAgencyID="320" schemeID="urn:oioubl:id:taxschemeid-1.1">63</cbc:ID>
+                    <cbc:Name>Moms</cbc:Name>
+                </cac:TaxScheme>
+            </cac:PartyTaxScheme>
+            <cac:PartyLegalEntity>
+                <cbc:RegistrationName>Seller name</cbc:RegistrationName>
+                <cbc:CompanyID schemeID="DK:CVR">DK00000003</cbc:CompanyID>
+            </cac:PartyLegalEntity>
+        </cac:Party>
+    </cac:SellerSupplierParty>
+    <cac:BuyerCustomerParty>
+        <cac:Party>
+            <cbc:EndpointID schemeID="GLN">0000000000001</cbc:EndpointID>
+            <cac:PartyIdentification>
+                <cbc:ID schemeAgencyID="9" schemeID="GLN">0000000000001</cbc:ID>
+            </cac:PartyIdentification>
+            <cac:PartyName>
+                <cbc:Name>Buyer name</cbc:Name>
+            </cac:PartyName>
+            <cac:PostalAddress>
+                <cbc:AddressFormatCode listID="urn:oioubl:codelist:addressformatcode-1.1" listAgencyID="320">StructuredLax</cbc:AddressFormatCode>
+                <cbc:StreetName>Street name 1</cbc:StreetName>
+                <cbc:CityName>Towm</cbc:CityName>
+                <cbc:PostalZone>12345</cbc:PostalZone>
+                <cac:Country>
+                    <cbc:IdentificationCode listID="ISO3166-1:Alpha2">DK</cbc:IdentificationCode>
+                </cac:Country>
+            </cac:PostalAddress>
+        </cac:Party>
+    </cac:BuyerCustomerParty>
+</OrderResponseSimple>
